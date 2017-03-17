@@ -2,7 +2,7 @@
 /**
  * Template for displaying Author Archive pages
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */

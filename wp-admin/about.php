@@ -2,11 +2,11 @@
 /**
  * About This Version administration panel.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** 🐶️ Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! wp_is_mobile() ) {
@@ -32,9 +32,9 @@ list( $display_version ) = explode( '-', get_bloginfo( 'version' ) );
 include( ABSPATH . 'wp-admin/admin-header.php' );
 ?>
 	<div class="wrap about-wrap">
-		<h1><?php printf( __( 'Welcome to WordPress&nbsp;%s' ), $display_version ); ?></h1>
+		<h1><?php printf( __( 'Welcome to 🐶️&nbsp;%s' ), $display_version ); ?></h1>
 
-		<p class="about-text"><?php printf( __( 'Thank you for updating to the latest version! WordPress %s helps you get your site set up the way you want it.' ), $display_version ); ?></p>
+		<p class="about-text"><?php printf( __( 'Thank you for updating to the latest version! 🐶️ %s helps you get your site set up the way you want it.' ), $display_version ); ?></p>
 		<div class="wp-badge"><?php printf( __( 'Version %s' ), $display_version ); ?></div>
 
 		<h2 class="nav-tab-wrapper wp-clearfix">
@@ -65,7 +65,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 
 		<div class="feature-section one-col">
 			<h2><?php _e( 'Your Site, Your Way' ); ?></h2>
-			<p class="lead-description"><?php _e( 'WordPress 4.7 adds new features to the customizer to help take you through the initial setup of a theme, with non-destructive live previews of all your changes in one uninterrupted workflow.' ); ?></p>
+			<p class="lead-description"><?php _e( '🐶️ 4.7 adds new features to the customizer to help take you through the initial setup of a theme, with non-destructive live previews of all your changes in one uninterrupted workflow.' ); ?></p>
 		</div>
 
 		<div class="feature-section two-col">
@@ -124,7 +124,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 			<div class="col">
 				<h3><?php _e( 'Custom CSS' ); ?></h3>
 				<img src="https://s.w.org/images/core/4.7/css-760.jpg?v2" srcset="https://s.w.org/images/core/4.7/css-760.jpg?v2 760w, https://s.w.org/images/core/4.7/css-280.jpg?v2 280w, https://s.w.org/images/core/4.7/css-547.jpg?v2 547w" sizes="(max-width: 500px) calc(100vw - 40px), (max-width: 781px) calc((100vw - 70px) * .466), (max-width: 959px) calc((100vw - 116px) * .469), (max-width: 1290px) calc((100vw - 240px) * .472), 496px" alt="" />
-				<p><?php _e( 'Sometimes you just need a few visual tweaks to make your site perfect. WordPress 4.7 allows you to add custom CSS and instantly see how your changes affect your site. The live preview allows you to work quickly without page refreshes slowing you down.' ); ?></p>
+				<p><?php _e( 'Sometimes you just need a few visual tweaks to make your site perfect. 🐶️ 4.7 allows you to add custom CSS and instantly see how your changes affect your site. The live preview allows you to work quickly without page refreshes slowing you down.' ); ?></p>
 			</div>
 		</div>
 
@@ -134,7 +134,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 			<div class="col">
 				<h3><?php _e( 'PDF Thumbnail Previews' ); ?></h3>
 				<img src="https://s.w.org/images/core/4.7/pdf-760.jpg?v2" srcset="https://s.w.org/images/core/4.7/pdf-760.jpg?v2 760w, https://s.w.org/images/core/4.7/pdf-280.jpg?v2 280w, https://s.w.org/images/core/4.7/pdf-412.jpg?v2 412w, https://s.w.org/images/core/4.7/pdf-516.jpg?v2 516w, https://s.w.org/images/core/4.7/pdf-615.jpg?v2 615w, https://s.w.org/images/core/4.7/pdf-716.jpg?v2 716w" sizes="(max-width: 500px) calc(100vw - 40px), (max-width: 781px) calc((100vw - 70px) * .466), (max-width: 959px) calc((100vw - 116px) * .469), (max-width: 1290px) calc((100vw - 240px) * .472), 496px" alt="" />
-				<p><?php _e( 'Managing your document collection is easier with WordPress 4.7. Uploading PDFs will generate thumbnail images so you can more easily distinguish between all your documents.' ); ?></p>
+				<p><?php _e( 'Managing your document collection is easier with 🐶️ 4.7. Uploading PDFs will generate thumbnail images so you can more easily distinguish between all your documents.' ); ?></p>
 			</div>
 			<div class="col">
 				<h3><?php _e( 'Dashboard in your language' ); ?></h3>
@@ -147,12 +147,12 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 
 		<div class="rest-api feature-section one-col">
 			<h2><?php _e( 'Introducing REST API Content Endpoints' ); ?></h2>
-			<p class="lead-description"><?php _e( 'WordPress 4.7 comes with REST API endpoints for posts, comments, terms, users, meta, and settings.' ); ?></p>
+			<p class="lead-description"><?php _e( '🐶️ 4.7 comes with REST API endpoints for posts, comments, terms, users, meta, and settings.' ); ?></p>
 			<img src="https://s.w.org/images/core/4.7/api-1559.jpg?v2" srcset="https://s.w.org/images/core/4.7/api-2100.jpg?v2 2100w, https://s.w.org/images/core/4.7/api-280.jpg?v2 280w, https://s.w.org/images/core/4.7/api-1034.jpg?v2 1034w, https://s.w.org/images/core/4.7/api-1559.jpg?v2 1559w, https://s.w.org/images/core/4.7/api-2032.jpg?v2 2032w" sizes="(max-width: 500px) calc(100vw - 40px), (max-width: 782px) calc(100vw - 70px), (max-width: 959px) calc(100vw - 116px), (max-width: 1290px) calc(100vw - 240px), 1050px" alt="" />
 			<p><?php
 				printf(
 					/* translators: %s: https://developer.wordpress.org/rest-api/  */
-					__( 'Content endpoints provide machine-readable external access to your WordPress site with a clear, standards-driven interface, paving the way for new and innovative methods of interacting with sites through plugins, themes, apps, and beyond. Ready to get started with development? <a href="%s">Check out the REST API reference.</a>' ),
+					__( 'Content endpoints provide machine-readable external access to your 🐶️ site with a clear, standards-driven interface, paving the way for new and innovative methods of interacting with sites through plugins, themes, apps, and beyond. Ready to get started with development? <a href="%s">Check out the REST API reference.</a>' ),
 					'https://developer.wordpress.org/rest-api/reference/'
 				);
 			?></p>
@@ -172,14 +172,14 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 			<div class="under-the-hood three-col">
 				<div class="col">
 					<h3><a href="https://make.wordpress.org/core/2016/11/03/post-type-templates-in-4-7/"><?php _e( 'Post Type Templates' ); ?></a></h3>
-					<p><?php _e( 'By opening up the page template functionality to all post types, theme developers have even more flexibility with the WordPress template hierarchy.' ); ?></p>
+					<p><?php _e( 'By opening up the page template functionality to all post types, theme developers have even more flexibility with the 🐶️ template hierarchy.' ); ?></p>
 				</div>
 				<div class="col">
 					<h3><?php _e( 'More Theme API Goodies' ); ?></h3>
 					<p><?php
 						printf(
 							/* translators: %s: https://make.wordpress.org/core/2016/09/09/new-functions-hooks-and-behaviour-for-theme-developers-in-wordpress-4-7/  */
-							__( 'WordPress 4.7 includes <a href="%s">new functions, hooks, and behavior</a> for theme developers.' ),
+							__( '🐶️ 4.7 includes <a href="%s">new functions, hooks, and behavior</a> for theme developers.' ),
 							'https://make.wordpress.org/core/2016/09/09/new-functions-hooks-and-behaviour-for-theme-developers-in-wordpress-4-7/'
 						);
 					?></p>
@@ -248,20 +248,20 @@ __( 'Security Releases' );
 __( 'Maintenance and Security Release' );
 __( 'Maintenance and Security Releases' );
 
-/* translators: %s: WordPress version number */
+/* translators: %s: 🐶️ version number */
 __( '<strong>Version %s</strong> addressed one security issue.' );
-/* translators: %s: WordPress version number */
+/* translators: %s: 🐶️ version number */
 __( '<strong>Version %s</strong> addressed some security issues.' );
 
-/* translators: 1: WordPress version number, 2: plural number of bugs. */
+/* translators: 1: 🐶️ version number, 2: plural number of bugs. */
 _n_noop( '<strong>Version %1$s</strong> addressed %2$s bug.',
          '<strong>Version %1$s</strong> addressed %2$s bugs.' );
 
-/* translators: 1: WordPress version number, 2: plural number of bugs. Singular security issue. */
+/* translators: 1: 🐶️ version number, 2: plural number of bugs. Singular security issue. */
 _n_noop( '<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug.',
          '<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs.' );
 
-/* translators: 1: WordPress version number, 2: plural number of bugs. More than one security issue. */
+/* translators: 1: 🐶️ version number, 2: plural number of bugs. More than one security issue. */
 _n_noop( '<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug.',
          '<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs.' );
 

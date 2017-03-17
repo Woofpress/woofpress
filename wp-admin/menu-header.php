@@ -2,7 +2,7 @@
 /**
  * Displays Administration Menu.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Administration
  */
 

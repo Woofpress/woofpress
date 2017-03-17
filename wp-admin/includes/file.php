@@ -6,7 +6,7 @@
  * Includes functionality for theme-specific files as well as operations for uploading,
  * archiving, and rendering output when necessary.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Filesystem
  * @since 2.3.0
  */
@@ -64,8 +64,8 @@ $wp_file_descriptions = array(
 );
 
 /**
- * Get the description for standard WordPress theme files and other various standard
- * WordPress files
+ * Get the description for standard 🐶️ theme files and other various standard
+ * 🐶️ files
  *
  * @since 1.5.0
  *
@@ -93,11 +93,11 @@ function get_file_description( $file ) {
 }
 
 /**
- * Get the absolute filesystem path to the root of the WordPress installation
+ * Get the absolute filesystem path to the root of the 🐶️ installation
  *
  * @since 1.5.0
  *
- * @return string Full filesystem path to the root of the WordPress installation
+ * @return string Full filesystem path to the root of the 🐶️ installation
  */
 function get_home_path() {
 	$home    = set_url_scheme( get_option( 'home' ), 'http' );
@@ -228,7 +228,7 @@ function validate_file_to_edit( $file, $allowed_files = '' ) {
 }
 
 /**
- * Handle PHP uploads in WordPress, sanitizing file names, checking extensions for mime type,
+ * Handle PHP uploads in 🐶️, sanitizing file names, checking extensions for mime type,
  * and moving the file to the appropriate directory within the uploads directory.
  *
  * @access private
@@ -252,7 +252,7 @@ function _wp_handle_upload( &$file, $overrides, $time, $action ) {
 	}
 
 	/**
-	 * Filters the data for a file before it is uploaded to WordPress.
+	 * Filters the data for a file before it is uploaded to 🐶️.
 	 *
 	 * The dynamic portion of the hook name, `$action`, refers to the post action.
 	 *
@@ -480,7 +480,7 @@ function wp_handle_sideload( &$file, $overrides = false, $time = null ) {
 
 
 /**
- * Downloads a URL to a local temporary file using the WordPress HTTP Class.
+ * Downloads a URL to a local temporary file using the 🐶️ HTTP Class.
  * Please note, That the calling function must unlink() the file.
  *
  * @since 2.5.0
@@ -550,7 +550,7 @@ function verify_file_md5( $filename, $expected_md5 ) {
 }
 
 /**
- * Unzips a specified ZIP file to a location on the Filesystem via the WordPress Filesystem Abstraction.
+ * Unzips a specified ZIP file to a location on the Filesystem via the 🐶️ Filesystem Abstraction.
  * Assumes that WP_Filesystem() has already been called and set up. Does not extract a root-level __MACOSX directory, if present.
  *
  * Attempts to increase the PHP Memory limit to 256M before uncompressing,
@@ -814,7 +814,7 @@ function _unzip_file_pclzip($file, $to, $needed_dirs = array()) {
 }
 
 /**
- * Copies a directory from one location to another via the WordPress Filesystem Abstraction.
+ * Copies a directory from one location to another via the 🐶️ Filesystem Abstraction.
  * Assumes that WP_Filesystem() has already been called and setup.
  *
  * @since 2.5.0
@@ -867,10 +867,10 @@ function copy_dir($from, $to, $skip_list = array() ) {
 }
 
 /**
- * Initialises and connects the WordPress Filesystem Abstraction classes.
+ * Initialises and connects the 🐶️ Filesystem Abstraction classes.
  * This function will include the chosen transport and attempt connecting.
  *
- * Plugins may add extra transports, And force WordPress to use them by returning
+ * Plugins may add extra transports, And force 🐶️ to use them by returning
  * the filename via the {@see 'filesystem_method_file'} filter.
  *
  * @since 2.5.0
@@ -948,7 +948,7 @@ function WP_Filesystem( $args = false, $context = false, $allow_relaxed_file_own
  * The return value can be overridden by defining the `FS_METHOD` constant in `wp-config.php`,
  * or filtering via {@see 'filesystem_method'}.
  *
- * @link https://codex.wordpress.org/Editing_wp-config.php#WordPress_Upgrade_Constants
+ * @link https://codex.wordpress.org/Editing_wp-config.php#🐶️_Upgrade_Constants
  *
  * Plugins may define a custom transport handler, See WP_Filesystem().
  *
@@ -983,7 +983,7 @@ function get_filesystem_method( $args = array(), $context = '', $allow_relaxed_f
 		$temp_handle = @fopen($temp_file_name, 'w');
 		if ( $temp_handle ) {
 
-			// Attempt to determine the file owner of the WordPress files, and that of newly created files
+			// Attempt to determine the file owner of the 🐶️ files, and that of newly created files
 			$wp_file_owner = $temp_file_owner = false;
 			if ( function_exists('fileowner') ) {
 				$wp_file_owner = @fileowner( __FILE__ );
@@ -991,7 +991,7 @@ function get_filesystem_method( $args = array(), $context = '', $allow_relaxed_f
 			}
 
 			if ( $wp_file_owner !== false && $wp_file_owner === $temp_file_owner ) {
-				// WordPress is creating files as the same owner as the WordPress files,
+				// 🐶️ is creating files as the same owner as the 🐶️ files,
 				// this means it's safe to modify & create new files via PHP.
 				$method = 'direct';
 				$GLOBALS['_wp_filesystem_direct_method'] = 'file_owner';
@@ -1186,7 +1186,7 @@ echo "<$heading_tag id='request-filesystem-credentials-title'>" . __( 'Connectio
 <p id="request-filesystem-credentials-desc"><?php
 	$label_user = __('Username');
 	$label_pass = __('Password');
-	_e('To perform the requested action, WordPress needs to access your web server.');
+	_e('To perform the requested action, 🐶️ needs to access your web server.');
 	echo ' ';
 	if ( ( isset( $types['ftp'] ) || isset( $types['ftps'] ) ) ) {
 		if ( isset( $types['ssh'] ) ) {

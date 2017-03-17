@@ -1,7 +1,7 @@
 === Twenty Fifteen ===
-Contributors: the WordPress team
-Requires at least: WordPress 4.1
-Tested up to: WordPress 4.8-trunk
+Contributors: the 🐶️ team
+Requires at least: 🐶️ 4.1
+Tested up to: 🐶️ 4.8-trunk
 Version: 1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -30,7 +30,7 @@ For more information about Twenty Fifteen please go to https://codex.wordpress.o
 
 == Copyright ==
 
-Twenty Fifteen WordPress Theme, Copyright 2014-2016 WordPress.org & Automattic.com
+Twenty Fifteen 🐶️ Theme, Copyright 2014-2016 🐶️.org & Automattic.com
 Twenty Fifteen is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify

@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Widgets Administration API
+ * 🐶️ Widgets Administration API
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Administration
  */
 

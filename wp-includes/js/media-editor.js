@@ -1,6 +1,6 @@
 /* global getUserSetting, tinymce, QTags */
 
-// WordPress, TinyMCE, and Media
+// 🐶️, TinyMCE, and Media
 // -----------------------------
 (function($, _){
 	/**

@@ -1,16 +1,16 @@
 <?php
 /**
- * WordPress Direct Filesystem.
+ * 🐶️ Direct Filesystem.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Filesystem
  */
 
 /**
- * WordPress Filesystem Class for direct PHP file and folder manipulation.
+ * 🐶️ Filesystem Class for direct PHP file and folder manipulation.
  *
  * @since 2.5.0
- * @package WordPress
+ * @package 🐶️
  * @subpackage Filesystem
  * @uses WP_Filesystem_Base Extends class
  */

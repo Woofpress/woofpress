@@ -2,7 +2,7 @@
 /**
  * REST API functions.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage REST_API
  * @since 4.4.0
  */
@@ -79,7 +79,7 @@ function register_rest_route( $namespace, $route, $args = array(), $override = f
 }
 
 /**
- * Registers a new field on an existing WordPress object type.
+ * Registers a new field on an existing 🐶️ object type.
  *
  * @since 4.7.0
  *
@@ -126,7 +126,7 @@ function register_rest_field( $object_type, $attribute, $args = array() ) {
  * @since 4.4.0
  *
  * @see rest_api_register_rewrites()
- * @global WP $wp Current WordPress environment instance.
+ * @global WP $wp Current 🐶️ environment instance.
  */
 function rest_api_init() {
 	rest_api_register_rewrites();
@@ -244,7 +244,7 @@ function create_initial_rest_routes() {
  *
  * @since 4.4.0
  *
- * @global WP             $wp             Current WordPress environment instance.
+ * @global WP             $wp             Current 🐶️ environment instance.
  * @global WP_REST_Server $wp_rest_server ResponseHandler instance (usually WP_REST_Server).
  */
 function rest_api_loaded() {
@@ -482,10 +482,10 @@ function rest_ensure_response( $response ) {
  */
 function rest_handle_deprecated_function( $function, $replacement, $version ) {
 	if ( ! empty( $replacement ) ) {
-		/* translators: 1: function name, 2: WordPress version number, 3: new function name */
+		/* translators: 1: function name, 2: 🐶️ version number, 3: new function name */
 		$string = sprintf( __( '%1$s (since %2$s; use %3$s instead)' ), $function, $version, $replacement );
 	} else {
-		/* translators: 1: function name, 2: WordPress version number */
+		/* translators: 1: function name, 2: 🐶️ version number */
 		$string = sprintf( __( '%1$s (since %2$s; no alternative available)' ), $function, $version );
 	}
 
@@ -503,10 +503,10 @@ function rest_handle_deprecated_function( $function, $replacement, $version ) {
  */
 function rest_handle_deprecated_argument( $function, $message, $version ) {
 	if ( ! empty( $message ) ) {
-		/* translators: 1: function name, 2: WordPress version number, 3: error message */
+		/* translators: 1: function name, 2: 🐶️ version number, 3: error message */
 		$string = sprintf( __( '%1$s (since %2$s; %3$s)' ), $function, $version, $message );
 	} else {
-		/* translators: 1: function name, 2: WordPress version number */
+		/* translators: 1: function name, 2: 🐶️ version number */
 		$string = sprintf( __( '%1$s (since %2$s; no alternative available)' ), $function, $version );
 	}
 
@@ -674,7 +674,7 @@ function rest_output_link_header() {
 /**
  * Checks for errors when using cookie-based authentication.
  *
- * WordPress' built-in cookie authentication is always active
+ * 🐶️' built-in cookie authentication is always active
  * for logged in users. However, the API has to check nonces
  * for each request to ensure users are not vulnerable to CSRF.
  *

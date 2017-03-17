@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Customize Section classes
+ * 🐶️ Customize Section classes
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Customize
  * @since 3.4.0
  */

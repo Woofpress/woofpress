@@ -5,7 +5,7 @@
  * Contains the closing of the id=main div and all content
  * after. Calls sidebar-footer.php for bottom widgets.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Twenty_Ten
  * @since Twenty Ten 1.0
  */
@@ -37,7 +37,7 @@
 				 * @since Twenty Ten 1.0
 				 */
 				do_action( 'twentyten_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyten' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyten' ); ?>"><?php printf( __( 'Proudly powered by %s.', 'twentyten' ), 'WordPress' ); ?></a>
+				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyten' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyten' ); ?>"><?php printf( __( 'Proudly powered by %s.', 'twentyten' ), '🐶️' ); ?></a>
 			</div><!-- #site-generator -->
 
 		</div><!-- #colophon -->

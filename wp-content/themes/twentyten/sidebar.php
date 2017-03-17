@@ -2,7 +2,7 @@
 /**
  * Sidebar template containing the primary and secondary widget areas
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Twenty_Ten
  * @since Twenty Ten 1.0
  */

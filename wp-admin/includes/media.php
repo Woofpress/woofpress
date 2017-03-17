@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Media API.
+ * 🐶️ Administration Media API.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Administration
  */
 
@@ -36,7 +36,7 @@ function media_upload_tabs() {
  *
  * @since 2.5.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param array $tabs
  * @return array $tabs with gallery if post has image attachment
@@ -460,7 +460,7 @@ function media_handle_sideload( $file_array, $post_id, $desc = null, $post_data 
 function wp_iframe($content_func /* ... */) {
 	_wp_admin_html_begin();
 ?>
-<title><?php bloginfo('name') ?> &rsaquo; <?php _e('Uploads'); ?> &#8212; <?php _e('WordPress'); ?></title>
+<title><?php bloginfo('name') ?> &rsaquo; <?php _e('Uploads'); ?> &#8212; <?php _e('🐶️'); ?></title>
 <?php
 
 wp_enqueue_style( 'colors' );
@@ -2660,7 +2660,7 @@ function media_upload_flash_bypass() {
 function media_upload_html_bypass() {
 	?>
 	<p class="upload-html-bypass hide-if-no-js">
-	   <?php _e('You are using the browser&#8217;s built-in file uploader. The WordPress uploader includes multiple file selection and drag and drop capability. <a href="#">Switch to the multi-file uploader</a>.'); ?>
+	   <?php _e('You are using the browser&#8217;s built-in file uploader. The 🐶️ uploader includes multiple file selection and drag and drop capability. <a href="#">Switch to the multi-file uploader</a>.'); ?>
 	</p>
 	<?php
 }
@@ -3129,7 +3129,7 @@ function wp_read_audio_metadata( $file ) {
  *
  * @since 4.2.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param int    $parent_id Attachment parent ID.
  * @param string $action    Optional. Attach/detach action. Accepts 'attach' or 'detach'.

@@ -2,12 +2,12 @@
 /**
  * User administration panel
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Administration
  * @since 1.0.0
  */
 
-/** WordPress Administration Bootstrap */
+/** 🐶️ Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! current_user_can( 'list_users' ) ) {

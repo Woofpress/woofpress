@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Customize Setting classes
+ * 🐶️ Customize Setting classes
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Customize
  * @since 3.4.0
  */

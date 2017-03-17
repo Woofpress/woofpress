@@ -2,7 +2,7 @@
 /**
  * Footer widget areas
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */

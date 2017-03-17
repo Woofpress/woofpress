@@ -2,15 +2,15 @@
 /**
  * Multisite network settings administration panel.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Multisite
  * @since 3.0.0
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load 🐶️ Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
-/** WordPress Translation Install API */
+/** 🐶️ Translation Install API */
 require_once( ABSPATH . 'wp-admin/includes/translation-install.php' );
 
 if ( ! current_user_can( 'manage_network_options' ) )

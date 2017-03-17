@@ -2,12 +2,12 @@
 /**
  * Multisite users administration panel.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Multisite
  * @since 3.0.0
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load 🐶️ Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! current_user_can( 'manage_network_users' ) )

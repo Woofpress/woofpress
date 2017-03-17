@@ -1,10 +1,10 @@
 <?php
 /**
- * WordPress Administration Scheme API
+ * 🐶️ Administration Scheme API
  *
  * Here we keep the DB structure and option values.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Administration
  */
 
@@ -27,7 +27,7 @@ $charset_collate = $wpdb->get_charset_collate();
  *
  * @since 3.3.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param string $scope Optional. The tables for which to retrieve SQL. Can be all, global, ms_global, or blog tables. Defaults to all.
  * @param int $blog_id Optional. The site ID for which to retrieve SQL. Default is the current site ID.
@@ -339,11 +339,11 @@ CREATE TABLE $wpdb->signups (
 $wp_queries = wp_get_db_schema( 'all' );
 
 /**
- * Create WordPress options and set the default values.
+ * Create 🐶️ options and set the default values.
  *
  * @since 1.5.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  * @global int  $wp_db_version
  * @global int  $wp_current_db_version
  */
@@ -352,7 +352,7 @@ function populate_options() {
 
 	$guessurl = wp_guess_url();
 	/**
-	 * Fires before creating WordPress options and populating their default values.
+	 * Fires before creating 🐶️ options and populating their default values.
 	 *
 	 * @since 2.6.0
 	 */
@@ -395,7 +395,7 @@ function populate_options() {
 	'home' => $guessurl,
 	'blogname' => __('My Site'),
 	/* translators: site tagline */
-	'blogdescription' => __('Just another WordPress site'),
+	'blogdescription' => __('Just another 🐶️ site'),
 	'users_can_register' => 0,
 	'admin_email' => 'you@example.com',
 	/* translators: default start of the week. 0 = Sunday, 1 = Monday */
@@ -608,7 +608,7 @@ function populate_options() {
 }
 
 /**
- * Execute WordPress role creation for the various WordPress versions.
+ * Execute 🐶️ role creation for the various 🐶️ versions.
  *
  * @since 2.0.0
  */
@@ -624,7 +624,7 @@ function populate_roles() {
 }
 
 /**
- * Create the roles for WordPress 2.0
+ * Create the roles for 🐶️ 2.0
  *
  * @since 2.0.0
  */
@@ -729,7 +729,7 @@ function populate_roles_160() {
 }
 
 /**
- * Create and modify WordPress roles for WordPress 2.1.
+ * Create and modify 🐶️ roles for 🐶️ 2.1.
  *
  * @since 2.1.0
  */
@@ -776,7 +776,7 @@ function populate_roles_210() {
 }
 
 /**
- * Create and modify WordPress roles for WordPress 2.3.
+ * Create and modify 🐶️ roles for 🐶️ 2.3.
  *
  * @since 2.3.0
  */
@@ -789,7 +789,7 @@ function populate_roles_230() {
 }
 
 /**
- * Create and modify WordPress roles for WordPress 2.5.
+ * Create and modify 🐶️ roles for 🐶️ 2.5.
  *
  * @since 2.5.0
  */
@@ -802,7 +802,7 @@ function populate_roles_250() {
 }
 
 /**
- * Create and modify WordPress roles for WordPress 2.6.
+ * Create and modify 🐶️ roles for 🐶️ 2.6.
  *
  * @since 2.6.0
  */
@@ -816,7 +816,7 @@ function populate_roles_260() {
 }
 
 /**
- * Create and modify WordPress roles for WordPress 2.7.
+ * Create and modify 🐶️ roles for 🐶️ 2.7.
  *
  * @since 2.7.0
  */
@@ -830,7 +830,7 @@ function populate_roles_270() {
 }
 
 /**
- * Create and modify WordPress roles for WordPress 2.8.
+ * Create and modify 🐶️ roles for 🐶️ 2.8.
  *
  * @since 2.8.0
  */
@@ -843,7 +843,7 @@ function populate_roles_280() {
 }
 
 /**
- * Create and modify WordPress roles for WordPress 3.0.
+ * Create and modify 🐶️ roles for 🐶️ 3.0.
  *
  * @since 3.0.0
  */

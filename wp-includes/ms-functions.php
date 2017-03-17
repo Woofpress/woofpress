@@ -1,8 +1,8 @@
 <?php
 /**
- * Multisite WordPress API
+ * Multisite 🐶️ API
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Multisite
  * @since 3.0.0
  */
@@ -34,7 +34,7 @@ function get_sitestats() {
  *
  * @since MU 1.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param int $user_id The unique ID of the user
  * @return WP_Site|void The blog object
@@ -194,7 +194,7 @@ function add_user_to_blog( $blog_id, $user_id, $role ) {
  *
  * @since MU 1.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param int    $user_id  ID of the user you're removing.
  * @param int    $blog_id  ID of the blog you're removing the user from.
@@ -297,7 +297,7 @@ function get_blog_permalink( $blog_id, $post_id ) {
  *
  * @since MU 2.6.5
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param string $domain
  * @param string $path   Optional. Not required for subdomain installations.
@@ -401,7 +401,7 @@ function is_email_address_unsafe( $user_email ) {
  *
  * @since MU
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param string $user_name  The login name provided by the user.
  * @param string $user_email The email provided by the user.
@@ -531,7 +531,7 @@ function wpmu_validate_user_signup($user_name, $user_email) {
  * effectively an override of this limitation.
  *
  * Filter {@see 'wpmu_validate_blog_signup'} if you want to modify
- * the way that WordPress validates new site signups.
+ * the way that 🐶️ validates new site signups.
  *
  * @since MU
  *
@@ -654,7 +654,7 @@ function wpmu_validate_blog_signup( $blogname, $blog_title, $user = '' ) {
  *
  * @since MU
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param string $domain     The requested domain.
  * @param string $path       The requested path.
@@ -720,7 +720,7 @@ function wpmu_signup_blog( $domain, $path, $title, $user, $user_email, $meta = a
  *
  * @since MU
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param string $user       The user's requested login name.
  * @param string $user_email The user's email address.
@@ -824,7 +824,7 @@ function wpmu_signup_blog_notification( $domain, $path, $title, $user_login, $us
 	$admin_email = get_site_option( 'admin_email' );
 	if ( $admin_email == '' )
 		$admin_email = 'support@' . $_SERVER['SERVER_NAME'];
-	$from_name = get_site_option( 'site_name' ) == '' ? 'WordPress' : esc_html( get_site_option( 'site_name' ) );
+	$from_name = get_site_option( 'site_name' ) == '' ? '🐶️' : esc_html( get_site_option( 'site_name' ) );
 	$message_headers = "From: \"{$from_name}\" <{$admin_email}>\n" . "Content-Type: text/plain; charset=\"" . get_option('blog_charset') . "\"\n";
 
 	$user = get_user_by( 'login', $user_login );
@@ -930,7 +930,7 @@ function wpmu_signup_user_notification( $user_login, $user_email, $key, $meta = 
 	$admin_email = get_site_option( 'admin_email' );
 	if ( $admin_email == '' )
 		$admin_email = 'support@' . $_SERVER['SERVER_NAME'];
-	$from_name = get_site_option( 'site_name' ) == '' ? 'WordPress' : esc_html( get_site_option( 'site_name' ) );
+	$from_name = get_site_option( 'site_name' ) == '' ? '🐶️' : esc_html( get_site_option( 'site_name' ) );
 	$message_headers = "From: \"{$from_name}\" <{$admin_email}>\n" . "Content-Type: text/plain; charset=\"" . get_option('blog_charset') . "\"\n";
 	$message = sprintf(
 		/**
@@ -992,7 +992,7 @@ function wpmu_signup_user_notification( $user_login, $user_email, $key, $meta = 
  *
  * @since MU
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param string $key The activation key provided to the user.
  * @return array|WP_Error An array containing information about the activated user and/or blog
@@ -1301,7 +1301,7 @@ Disable these notifications: %3$s'), $user->user_login, wp_unslash( $_SERVER['RE
  *
  * @since MU
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param string $domain  The domain to be checked.
  * @param string $path    The path to be checked.
@@ -1340,7 +1340,7 @@ function domain_exists($domain, $path, $site_id = 1) {
  *
  * @since MU
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param string $domain  The domain of the new site.
  * @param string $path    The path of the new site.
@@ -1390,7 +1390,7 @@ function install_blog( $blog_id, $blog_title = '' ) {
 
 	$suppress = $wpdb->suppress_errors();
 	if ( $wpdb->get_results( "DESCRIBE {$wpdb->posts}" ) )
-		die( '<h1>' . __( 'Already Installed' ) . '</h1><p>' . __( 'You appear to have already installed WordPress. To reinstall please clear your old database tables first.' ) . '</p></body></html>' );
+		die( '<h1>' . __( 'Already Installed' ) . '</h1><p>' . __( 'You appear to have already installed 🐶️. To reinstall please clear your old database tables first.' ) . '</p></body></html>' );
 	$wpdb->suppress_errors( $suppress );
 
 	$url = get_blogaddress_by_id( $blog_id );
@@ -1442,7 +1442,7 @@ function install_blog( $blog_id, $blog_title = '' ) {
  * @deprecated MU
  * @deprecated Use wp_install_defaults()
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param int $blog_id Ignored in this function.
  * @param int $user_id
@@ -1546,12 +1546,12 @@ We hope you enjoy your new site. Thanks!
 	if ( $admin_email == '' )
 		$admin_email = 'support@' . $_SERVER['SERVER_NAME'];
 
-	$from_name = get_site_option( 'site_name' ) == '' ? 'WordPress' : esc_html( get_site_option( 'site_name' ) );
+	$from_name = get_site_option( 'site_name' ) == '' ? '🐶️' : esc_html( get_site_option( 'site_name' ) );
 	$message_headers = "From: \"{$from_name}\" <{$admin_email}>\n" . "Content-Type: text/plain; charset=\"" . get_option('blog_charset') . "\"\n";
 	$message = $welcome_email;
 
 	if ( empty( $current_network->site_name ) )
-		$current_network->site_name = 'WordPress';
+		$current_network->site_name = '🐶️';
 
 	/* translators: New site notification email subject. 1: Network name, 2: New site name */
 	$subject = __( 'New %1$s Site: %2$s' );
@@ -1634,12 +1634,12 @@ function wpmu_welcome_user_notification( $user_id, $password, $meta = array() ) 
 	if ( $admin_email == '' )
 		$admin_email = 'support@' . $_SERVER['SERVER_NAME'];
 
-	$from_name = get_site_option( 'site_name' ) == '' ? 'WordPress' : esc_html( get_site_option( 'site_name' ) );
+	$from_name = get_site_option( 'site_name' ) == '' ? '🐶️' : esc_html( get_site_option( 'site_name' ) );
 	$message_headers = "From: \"{$from_name}\" <{$admin_email}>\n" . "Content-Type: text/plain; charset=\"" . get_option('blog_charset') . "\"\n";
 	$message = $welcome_email;
 
 	if ( empty( $current_network->site_name ) )
-		$current_network->site_name = 'WordPress';
+		$current_network->site_name = '🐶️';
 
 	/* translators: New user notification email subject. 1: Network name, 2: New user login */
 	$subject = __( 'New %1$s User: %2$s' );
@@ -1688,7 +1688,7 @@ function get_current_site() {
  *
  * @since MU
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param int $user_id
  * @return array Contains the blog_id, post_id, post_date_gmt, and post_gmt_ts
@@ -1802,7 +1802,7 @@ function recurse_dirsize( $directory, $exclude = null ) {
 /**
  * Check an array of MIME types against a whitelist.
  *
- * WordPress ships with a set of allowed upload filetypes,
+ * 🐶️ ships with a set of allowed upload filetypes,
  * which is defined in wp-includes/functions.php in
  * get_allowed_mime_types(). This function is used to filter
  * that list against the filetype whitelist provided by Multisite
@@ -1828,14 +1828,14 @@ function check_upload_mimes( $mimes ) {
 /**
  * Update a blog's post count.
  *
- * WordPress MS stores a blog's post count as an option so as
+ * 🐶️ MS stores a blog's post count as an option so as
  * to avoid extraneous COUNTs when a blog's details are fetched
  * with get_site(). This function is called when posts are published
  * or unpublished to make sure the count stays current.
  *
  * @since MU
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param string $deprecated Not used.
  */
@@ -1849,7 +1849,7 @@ function update_posts_count( $deprecated = '' ) {
  *
  * @since MU
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param int $blog_id
  * @param int $user_id
@@ -1868,7 +1868,7 @@ function wpmu_log_new_registrations( $blog_id, $user_id ) {
  *
  * @see term_id_filter
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  * @staticvar int $global_terms_recurse
  *
  * @param int    $term_id    An ID for a term on the current blog.
@@ -2047,7 +2047,7 @@ function maybe_add_existing_user_to_blog() {
 	if ( empty( $details ) || is_wp_error( add_existing_user_to_blog( $details ) ) )
 		wp_die( sprintf(__('An error occurred adding you to this site. Back to the <a href="%s">homepage</a>.'), home_url() ) );
 
-	wp_die( sprintf( __( 'You have been added to this site. Please visit the <a href="%s">homepage</a> or <a href="%s">log in</a> using your username and password.' ), home_url(), admin_url() ), __( 'WordPress &rsaquo; Success' ), array( 'response' => 200 ) );
+	wp_die( sprintf( __( 'You have been added to this site. Please visit the <a href="%s">homepage</a> or <a href="%s">log in</a> using your username and password.' ), home_url(), admin_url() ), __( '🐶️ &rsaquo; Success' ), array( 'response' => 200 ) );
 }
 
 /**
@@ -2149,7 +2149,7 @@ function update_blog_public( $old_value, $value ) {
  *
  * @since MU
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param string $key
  * @param int    $user_id Optional. Defaults to current user.
@@ -2325,7 +2325,7 @@ function wp_maybe_update_network_user_counts() {
  *
  * @since 3.7.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  */
 function wp_update_network_site_counts() {
 	global $wpdb;
@@ -2346,7 +2346,7 @@ function wp_update_network_site_counts() {
  *
  * @since 3.7.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  */
 function wp_update_network_user_counts() {
 	global $wpdb;

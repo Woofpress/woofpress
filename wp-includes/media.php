@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress API for media display.
+ * 🐶️ API for media display.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Media
  */
 
@@ -339,7 +339,7 @@ function set_post_thumbnail_size( $width = 0, $height = 0, $crop = false ) {
  *
  * The {@see 'get_image_tag_class'} filter allows for changing the class name for the
  * image without having to use regular expressions on the HTML content. The
- * parameters are: what WordPress will use for the class, the Attachment ID,
+ * parameters are: what 🐶️ will use for the class, the Attachment ID,
  * image align value, and the size the image should be.
  *
  * The second filter, {@see 'get_image_tag'}, has the HTML content, which can then be
@@ -733,7 +733,7 @@ function image_get_intermediate_size( $post_id, $size = 'thumbnail' ) {
 		/*
 		 * When the size requested is smaller than the thumbnail dimensions, we
 		 * fall back to the thumbnail size to maintain backwards compatibility with
-		 * pre 4.6 versions of WordPress.
+		 * pre 4.6 versions of 🐶️.
 		 */
 		} elseif ( ! empty( $imagedata['sizes']['thumbnail'] ) && $imagedata['sizes']['thumbnail']['width'] >= $size[0] && $imagedata['sizes']['thumbnail']['width'] >= $size[1] ) {
 			$data = $imagedata['sizes']['thumbnail'];
@@ -1072,7 +1072,7 @@ function wp_calculate_image_srcset( $size_array, $image_src, $image_meta, $attac
 	$image_basename = wp_basename( $image_meta['file'] );
 
 	/*
-	 * WordPress flattens animated GIFs into one frame when generating intermediate sizes.
+	 * 🐶️ flattens animated GIFs into one frame when generating intermediate sizes.
 	 * To avoid hiding animation in user content, if src is a full size GIF, a srcset attribute is not generated.
 	 * If src is an intermediate size GIF, the full size is excluded from srcset to keep a flattened GIF from becoming animated.
 	 */
@@ -1105,7 +1105,7 @@ function wp_calculate_image_srcset( $size_array, $image_src, $image_meta, $attac
 	}
 
 	/*
-	 * Images that have been edited in WordPress after being uploaded will
+	 * Images that have been edited in 🐶️ after being uploaded will
 	 * contain a unique hash. Look for that hash and use it later to filter
 	 * out images that are leftovers from previous versions.
 	 */
@@ -1600,7 +1600,7 @@ add_shortcode('gallery', 'gallery_shortcode');
  * Builds the Gallery shortcode output.
  *
  * This implements the functionality of the Gallery Shortcode for displaying
- * WordPress images on a post.
+ * 🐶️ images on a post.
  *
  * @since 2.5.0
  *
@@ -1882,7 +1882,7 @@ function wp_playlist_scripts( $type ) {
  * Builds the Playlist shortcode output.
  *
  * This implements the functionality of the playlist shortcode for displaying
- * a collection of WordPress audio or video files in a post.
+ * a collection of 🐶️ audio or video files in a post.
  *
  * @since 3.9.0
  *
@@ -2203,7 +2203,7 @@ function wp_get_attachment_id3_keys( $attachment, $context = 'display' ) {
  * Builds the Audio shortcode output.
  *
  * This implements the functionality of the Audio Shortcode for displaying
- * WordPress mp3s in a post.
+ * 🐶️ mp3s in a post.
  *
  * @since 3.6.0
  *
@@ -2401,7 +2401,7 @@ function wp_get_video_extensions() {
  * Builds the Video shortcode output.
  *
  * This implements the functionality of the Video Shortcode for displaying
- * WordPress mp4s in a post.
+ * 🐶️ mp4s in a post.
  *
  * @since 3.6.0
  *
@@ -3810,7 +3810,7 @@ function wp_maybe_generate_attachment_metadata( $attachment ) {
  *
  * @since 4.0.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param string $url The URL to resolve.
  * @return int The found post ID, or 0 on failure.

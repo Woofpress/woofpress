@@ -2,12 +2,12 @@
 /**
  * Edit Term Administration Screen.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Administration
  * @since 4.5.0
  */
 
-/** WordPress Administration Bootstrap */
+/** 🐶️ Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( empty( $_REQUEST['tag_ID'] ) ) {

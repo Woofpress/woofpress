@@ -1,16 +1,16 @@
 <?php
 /**
- * WordPress FTP Filesystem.
+ * 🐶️ FTP Filesystem.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Filesystem
  */
 
 /**
- * WordPress Filesystem Class for implementing FTP.
+ * 🐶️ Filesystem Class for implementing FTP.
  *
  * @since 2.5.0
- * @package WordPress
+ * @package 🐶️
  * @subpackage Filesystem
  * @uses WP_Filesystem_Base Extends class
  */

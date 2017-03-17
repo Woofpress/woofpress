@@ -2,7 +2,7 @@
 /**
  * Twenty Eleven Theme Options
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */
@@ -123,7 +123,7 @@ function twentyeleven_theme_options_help() {
 	$screen = get_current_screen();
 
 	if ( method_exists( $screen, 'add_help_tab' ) ) {
-		// WordPress 3.3.0
+		// 🐶️ 3.3.0
 		$screen->add_help_tab( array(
 			'title' => __( 'Overview', 'twentyeleven' ),
 			'id' => 'theme-options-help',
@@ -133,7 +133,7 @@ function twentyeleven_theme_options_help() {
 
 		$screen->set_help_sidebar( $sidebar );
 	} else {
-		// WordPress 3.2.0
+		// 🐶️ 3.2.0
 		add_contextual_help( $screen, $help . $sidebar );
 	}
 }

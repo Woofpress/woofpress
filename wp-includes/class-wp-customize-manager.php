@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Customize Manager classes
+ * 🐶️ Customize Manager classes
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Customize
  * @since 3.4.0
  */
@@ -725,7 +725,7 @@ final class WP_Customize_Manager {
 	public function wp_loaded() {
 
 		/**
-		 * Fires once WordPress has loaded, allowing scripts and styles to be initialized.
+		 * Fires once 🐶️ has loaded, allowing scripts and styles to be initialized.
 		 *
 		 * @since 3.4.0
 		 *
@@ -1306,7 +1306,7 @@ final class WP_Customize_Manager {
 			return $prepared_attachments;
 		}
 
-		// Such is The WordPress Way.
+		// Such is The 🐶️ Way.
 		require_once( ABSPATH . 'wp-admin/includes/file.php' );
 		require_once( ABSPATH . 'wp-admin/includes/media.php' );
 		require_once( ABSPATH . 'wp-admin/includes/image.php' );
@@ -1552,7 +1552,7 @@ final class WP_Customize_Manager {
 		 * and natural URLs with transaction UUIDs added, we need to ensure that
 		 * the responses are never cached by proxies. In practice, this will not
 		 * be needed if the user is logged-in anyway. But if anonymous access is
-		 * allowed then the auth cookies would not be sent and WordPress would
+		 * allowed then the auth cookies would not be sent and 🐶️ would
 		 * not send no-cache headers by default.
 		 */
 		if ( ! headers_sent() ) {
@@ -2821,7 +2821,7 @@ final class WP_Customize_Manager {
 	 * that have no corresponding setting created.
 	 *
 	 * This is a mechanism to "wake up" settings that have been dynamically created
-	 * on the front end and have been sent to WordPress in `$_POST['customized']`. When WP
+	 * on the front end and have been sent to 🐶️ in `$_POST['customized']`. When WP
 	 * loads, the dynamically-created settings then will get created and previewed
 	 * even though they are not directly created statically with code.
 	 *

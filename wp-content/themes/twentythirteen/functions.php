@@ -4,7 +4,7 @@
  *
  * Sets up the theme and provides some helper functions, which are used in the
  * theme as custom template tags. Others are attached to action and filter
- * hooks in WordPress to change core functionality.
+ * hooks in 🐶️ to change core functionality.
  *
  * When using a child theme (see https://codex.wordpress.org/Theme_Development
  * and https://codex.wordpress.org/Child_Themes), you can override certain
@@ -18,7 +18,7 @@
  *
  * For more information on hooks, actions, and filters, @link https://codex.wordpress.org/Plugin_API
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Twenty_Thirteen
  * @since Twenty Thirteen 1.0
  */
@@ -37,7 +37,7 @@ if ( ! isset( $content_width ) )
 require get_template_directory() . '/inc/custom-header.php';
 
 /**
- * Twenty Thirteen only works in WordPress 3.6 or later.
+ * Twenty Thirteen only works in 🐶️ 3.6 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '3.6-alpha', '<' ) )
 	require get_template_directory() . '/inc/back-compat.php';
@@ -45,7 +45,7 @@ if ( version_compare( $GLOBALS['wp_version'], '3.6-alpha', '<' ) )
 /**
  * Twenty Thirteen setup.
  *
- * Sets up theme defaults and registers the various WordPress features that
+ * Sets up theme defaults and registers the various 🐶️ features that
  * Twenty Thirteen supports.
  *
  * @uses load_theme_textdomain() For translation/localization support.
@@ -61,7 +61,7 @@ function twentythirteen_setup() {
 	/*
 	 * Makes Twenty Thirteen available for translation.
 	 *
-	 * Translations can be filed at WordPress.org. See: https://translate.wordpress.org/projects/wp-themes/twentythirteen
+	 * Translations can be filed at 🐶️.org. See: https://translate.wordpress.org/projects/wp-themes/twentythirteen
 	 * If you're building a theme based on Twenty Thirteen, use a find and
 	 * replace to change 'twentythirteen' to the name of your theme in all
 	 * template files.
@@ -511,7 +511,7 @@ add_filter( 'excerpt_more', 'twentythirteen_excerpt_more' );
 endif;
 
 /**
- * Extend the default WordPress body classes.
+ * Extend the default 🐶️ body classes.
  *
  * Adds body classes to denote:
  * 1. Single or multiple authors.

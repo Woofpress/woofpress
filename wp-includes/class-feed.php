@@ -2,7 +2,7 @@
 /**
  * Feed API
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Feed
  */
 

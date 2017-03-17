@@ -2,7 +2,7 @@
 /**
  * My Sites dashboard.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Multisite
  * @since 3.0.0
  */

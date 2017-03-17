@@ -2,11 +2,11 @@
 /**
  * Defines constants and global variables that can be overridden, generally in wp-config.php.
  *
- * @package WordPress
+ * @package 🐶️
  */
 
 /**
- * Defines initial WordPress constants
+ * Defines initial 🐶️ constants
  *
  * @see wp_debug_mode()
  *
@@ -127,7 +127,7 @@ function wp_initial_constants() {
 }
 
 /**
- * Defines plugin directory WordPress constants
+ * Defines plugin directory 🐶️ constants
  *
  * Defines must-use plugin directory constants, which may be overridden in the sunrise.php drop-in
  *
@@ -189,7 +189,7 @@ function wp_plugin_directory_constants() {
 }
 
 /**
- * Defines cookie related WordPress constants
+ * Defines cookie related 🐶️ constants
  *
  * Defines constants after multisite is loaded.
  * @since 3.0.0
@@ -276,7 +276,7 @@ function wp_cookie_constants() {
 }
 
 /**
- * Defines cookie related WordPress constants
+ * Defines cookie related 🐶️ constants
  *
  * @since 3.0.0
  */
@@ -303,7 +303,7 @@ function wp_ssl_constants() {
 }
 
 /**
- * Defines functionality related WordPress constants
+ * Defines functionality related 🐶️ constants
  *
  * @since 3.0.0
  */
@@ -331,7 +331,7 @@ function wp_functionality_constants() {
 }
 
 /**
- * Defines templating related WordPress constants
+ * Defines templating related 🐶️ constants
  *
  * @since 3.0.0
  */

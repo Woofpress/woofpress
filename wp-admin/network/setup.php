@@ -2,12 +2,12 @@
 /**
  * Network Setup administration panel.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Multisite
  * @since 3.1.0
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load 🐶️ Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 require( ABSPATH . 'wp-admin/network.php' );

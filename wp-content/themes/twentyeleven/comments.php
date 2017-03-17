@@ -7,7 +7,7 @@
  * handled by a callback to twentyeleven_comment() which is
  * located in the functions.php file.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */

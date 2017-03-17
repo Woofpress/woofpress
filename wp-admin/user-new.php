@@ -2,11 +2,11 @@
 /**
  * New User Administration Screen.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** 🐶️ Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( is_multisite() ) {

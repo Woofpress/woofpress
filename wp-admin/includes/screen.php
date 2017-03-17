@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Screen API.
+ * 🐶️ Administration Screen API.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Administration
  */
 

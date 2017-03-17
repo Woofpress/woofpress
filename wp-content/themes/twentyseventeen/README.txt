@@ -1,7 +1,7 @@
 === Twenty Seventeen ===
-Contributors: the WordPress team
-Requires at least: WordPress 4.7
-Tested up to: WordPress 4.7
+Contributors: the 🐶️ team
+Requires at least: 🐶️ 4.7
+Tested up to: 🐶️ 4.7
 Version: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -23,7 +23,7 @@ For more information about Twenty Seventeen please go to https://codex.wordpress
 
 == Copyright ==
 
-Twenty Seventeen WordPress Theme, Copyright 2016 WordPress.org
+Twenty Seventeen 🐶️ Theme, Copyright 2016 🐶️.org
 Twenty Seventeen is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify

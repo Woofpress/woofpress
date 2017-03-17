@@ -1,10 +1,10 @@
 <?php
 /**
- * WordPress Upgrade Functions. Old file, must not be used. Include
+ * 🐶️ Upgrade Functions. Old file, must not be used. Include
  * wp-admin/includes/upgrade.php instead.
  *
  * @deprecated 2.5.0
- * @package WordPress
+ * @package 🐶️
  * @subpackage Administration
  */
 

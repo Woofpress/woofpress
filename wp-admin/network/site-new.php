@@ -2,15 +2,15 @@
 /**
  * Add Site Administration Screen
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Multisite
  * @since 3.1.0
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load 🐶️ Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
-/** WordPress Translation Install API */
+/** 🐶️ Translation Install API */
 require_once( ABSPATH . 'wp-admin/includes/translation-install.php' );
 
 if ( ! current_user_can( 'manage_sites' ) )
@@ -48,7 +48,7 @@ if ( isset($_REQUEST['action']) && 'add-site' == $_REQUEST['action'] ) {
 		if ( in_array( $domain, $subdirectory_reserved_names ) ) {
 			wp_die(
 				/* translators: %s: reserved names list */
-				sprintf( __( 'The following words are reserved for use by WordPress functions and cannot be used as blog names: %s' ),
+				sprintf( __( 'The following words are reserved for use by 🐶️ functions and cannot be used as blog names: %s' ),
 					'<code>' . implode( '</code>, <code>', $subdirectory_reserved_names ) . '</code>'
 				)
 			);

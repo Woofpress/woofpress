@@ -4,13 +4,13 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Twenty_Seventeen
  * @since 1.0
  */
 
 /**
- * Twenty Seventeen only works in WordPress 4.7 or later.
+ * Twenty Seventeen only works in 🐶️ 4.7 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
@@ -18,7 +18,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
 }
 
 /**
- * Sets up theme defaults and registers support for various WordPress features.
+ * Sets up theme defaults and registers support for various 🐶️ features.
  *
  * Note that this function is hooked into the after_setup_theme hook, which
  * runs before the init hook. The init hook is too late for some features, such
@@ -27,7 +27,7 @@ if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
 function twentyseventeen_setup() {
 	/*
 	 * Make theme available for translation.
-	 * Translations can be filed at WordPress.org. See: https://translate.wordpress.org/projects/wp-themes/twentyseventeen
+	 * Translations can be filed at 🐶️.org. See: https://translate.wordpress.org/projects/wp-themes/twentyseventeen
 	 * If you're building a theme based on Twenty Seventeen, use a find and replace
 	 * to change 'twentyseventeen' to the name of your theme in all the template files.
 	 */
@@ -37,9 +37,9 @@ function twentyseventeen_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	/*
-	 * Let WordPress manage the document title.
+	 * Let 🐶️ manage the document title.
 	 * By adding theme support, we declare that this theme does not use a
-	 * hard-coded <title> tag in the document head, and expect WordPress to
+	 * hard-coded <title> tag in the document head, and expect 🐶️ to
 	 * provide it for us.
 	 */
 	add_theme_support( 'title-tag' );

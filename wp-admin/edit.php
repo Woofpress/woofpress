@@ -2,11 +2,11 @@
 /**
  * Edit Posts Administration Screen.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** 🐶️ Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! $typenow )

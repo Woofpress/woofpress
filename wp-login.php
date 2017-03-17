@@ -1,14 +1,14 @@
 <?php
 /**
- * WordPress User Page
+ * 🐶️ User Page
  *
  * Handles authentication, registering, resetting passwords, forgot password,
  * and other user handling.
  *
- * @package WordPress
+ * @package 🐶️
  */
 
-/** Make sure that the WordPress bootstrap has run before continuing. */
+/** Make sure that the 🐶️ bootstrap has run before continuing. */
 require( dirname(__FILE__) . '/wp-load.php' );
 
 // Redirect to https login if forced to use SSL
@@ -25,7 +25,7 @@ if ( force_ssl_admin() && ! is_ssl() ) {
 /**
  * Output the login page header.
  *
- * @param string   $title    Optional. WordPress login Page title to display in the `<title>` element.
+ * @param string   $title    Optional. 🐶️ login Page title to display in the `<title>` element.
  *                           Default 'Log In'.
  * @param string   $message  Optional. Message to display in header. Default empty.
  * @param WP_Error $wp_error Optional. The error to pass. Default empty.
@@ -101,7 +101,7 @@ function login_header( $title = 'Log In', $message = '', $wp_error = '' ) {
 		$login_header_title = get_network()->site_name;
 	} else {
 		$login_header_url   = __( 'https://wordpress.org/' );
-		$login_header_title = __( 'Powered by WordPress' );
+		$login_header_title = __( 'Powered by 🐶️' );
 	}
 
 	/**
@@ -796,7 +796,7 @@ default:
 		} elseif ( isset( $_POST['testcookie'] ) && empty( $_COOKIE[ TEST_COOKIE ] ) ) {
 			// If cookies are disabled we can't log in even with a valid user+pass
 			/* translators: 1: Browser cookie documentation URL */
-			$user = new WP_Error( 'test_cookie', sprintf( __( '<strong>ERROR</strong>: Cookies are blocked or not supported by your browser. You must <a href="%s">enable cookies</a> to use WordPress.' ),
+			$user = new WP_Error( 'test_cookie', sprintf( __( '<strong>ERROR</strong>: Cookies are blocked or not supported by your browser. You must <a href="%s">enable cookies</a> to use 🐶️.' ),
 				__( 'https://codex.wordpress.org/Cookies' ) ) );
 		}
 	}
@@ -866,7 +866,7 @@ default:
 		elseif	( isset($_GET['checkemail']) && 'registered' == $_GET['checkemail'] )
 			$errors->add('registered', __('Registration complete. Please check your email.'), 'message');
 		elseif ( strpos( $redirect_to, 'about.php?updated' ) )
-			$errors->add('updated', __( '<strong>You have successfully updated WordPress!</strong> Please log back in to see what&#8217;s new.' ), 'message' );
+			$errors->add('updated', __( '<strong>You have successfully updated 🐶️!</strong> Please log back in to see what&#8217;s new.' ), 'message' );
 	}
 
 	/**

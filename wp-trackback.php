@@ -1,10 +1,10 @@
 <?php
 /**
- * Handle Trackbacks and Pingbacks Sent to WordPress
+ * Handle Trackbacks and Pingbacks Sent to 🐶️
  *
  * @since 0.71
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Trackbacks
  */
 

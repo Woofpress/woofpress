@@ -3,7 +3,7 @@
 /**
  * Site/blog functions that work with the blogs table and related data.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Multisite
  * @since MU
  */
@@ -13,7 +13,7 @@
  *
  * @since MU
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  */
 function wpmu_update_blogs_date() {
 	global $wpdb;
@@ -111,7 +111,7 @@ function get_id_from_blogname( $slug ) {
  *
  * @since MU
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param int|string|array $fields  Optional. A blog ID, a blog slug, or an array of fields to query against.
  *                                  If not specified the current blog ID is used.
@@ -296,7 +296,7 @@ function refresh_blog_details( $blog_id = 0 ) {
  *
  * @since MU
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param int   $blog_id Blog ID
  * @param array $details Array of details keyed by blogs table field names.
@@ -519,7 +519,7 @@ function get_site( $site = null ) {
  * @access private
  *
  * @see update_site_cache()
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param array $ids ID list.
  */
@@ -661,7 +661,7 @@ function get_blog_option( $id, $option, $default = false ) {
  *
  * You can create options without values and then update the values later.
  * Existing options will not be updated and checks are performed to ensure that you
- * aren't adding a protected WordPress option. Care should be taken to not name
+ * aren't adding a protected 🐶️ option. Care should be taken to not name
  * options the same as the ones which are protected.
  *
  * @since MU
@@ -688,7 +688,7 @@ function add_blog_option( $id, $option, $value ) {
 }
 
 /**
- * Removes option by name for a given blog id. Prevents removal of protected WordPress options.
+ * Removes option by name for a given blog id. Prevents removal of protected 🐶️ options.
  *
  * @since MU
  *
@@ -954,7 +954,7 @@ function update_archived( $id, $archived ) {
  *
  * @since MU
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param int    $blog_id BLog ID
  * @param string $pref    A field name
@@ -1030,7 +1030,7 @@ function update_blog_status( $blog_id, $pref, $value, $deprecated = null ) {
  *
  * @since MU
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param int    $id   The blog id
  * @param string $pref A field name
@@ -1051,7 +1051,7 @@ function get_blog_status( $id, $pref ) {
  *
  * @since MU
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param mixed $deprecated Not used
  * @param int   $start      The offset
@@ -1173,7 +1173,7 @@ function update_network_cache( $networks ) {
  * @access private
  *
  * @see update_network_cache()
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb 🐶️ database abstraction object.
  *
  * @param array $network_ids Array of network IDs.
  */

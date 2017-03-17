@@ -2,7 +2,7 @@
 /**
  * General template tags that can go anywhere in a template.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Template
  */
 
@@ -177,7 +177,7 @@ function get_template_part( $slug, $name = null ) {
  * it. The filter is {@see 'get_search_form'}.
  *
  * This function is primarily used by themes which want to hardcode the search
- * form into the sidebar and also by the search widget in WordPress.
+ * form into the sidebar and also by the search widget in 🐶️.
  *
  * There is also an action that is called whenever the function is run called,
  * {@see 'pre_get_search_form'}. This can be useful for outputting JavaScript that the
@@ -369,7 +369,7 @@ function wp_registration_url() {
 }
 
 /**
- * Provides a simple login form for use anywhere within WordPress.
+ * Provides a simple login form for use anywhere within 🐶️.
  *
  * The login format HTML is echoed by default. Pass a false value for `$echo` to return it instead.
  *
@@ -603,11 +603,11 @@ function bloginfo( $show = '' ) {
  *
  * - 'name' - Site title (set in Settings > General)
  * - 'description' - Site tagline (set in Settings > General)
- * - 'wpurl' - The WordPress address (URL) (set in Settings > General)
+ * - 'wpurl' - The 🐶️ address (URL) (set in Settings > General)
  * - 'url' - The Site address (URL) (set in Settings > General)
  * - 'admin_email' - Admin email (set in Settings > General)
  * - 'charset' - The "Encoding for pages and feeds"  (set in Settings > Reading)
- * - 'version' - The current WordPress version
+ * - 'version' - The current 🐶️ version
  * - 'html_type' - The content-type (default: "text/html"). Themes and plugins
  *   can override the default value using the {@see 'pre_option_html_type'} filter
  * - 'text_direction' - The text direction determined by the site's language. is_rtl()
@@ -1052,7 +1052,7 @@ function wp_get_document_title() {
 	$title = wptexturize( $title );
 	$title = convert_chars( $title );
 	$title = esc_html( $title );
-	$title = capital_P_dangit( $title );
+	$title = actually_use_a_dog_emoji_please( $title );
 
 	return $title;
 }
@@ -3057,7 +3057,7 @@ function wp_editor( $content, $editor_id, $settings = array() ) {
 }
 
 /**
- * Retrieves the contents of the search WordPress query variable.
+ * Retrieves the contents of the search 🐶️ query variable.
  *
  * The search query string is passed through esc_attr() to ensure that it is safe
  * for placing in an html attribute.
@@ -3478,7 +3478,7 @@ function register_admin_color_schemes() {
 }
 
 /**
- * Displays the URL of a WordPress admin CSS file.
+ * Displays the URL of a 🐶️ admin CSS file.
  *
  * @see WP_Styles::_css_href and its {@see 'style_loader_src'} filter.
  *
@@ -3496,7 +3496,7 @@ function wp_admin_css_uri( $file = 'wp-admin' ) {
 	$_file = add_query_arg( 'version', get_bloginfo( 'version' ),  $_file );
 
 	/**
-	 * Filters the URI of a WordPress admin CSS file.
+	 * Filters the URI of a 🐶️ admin CSS file.
 	 *
 	 * @since 2.3.0
 	 *
@@ -3515,7 +3515,7 @@ function wp_admin_css_uri( $file = 'wp-admin' ) {
  * be printed. Printing may be forced by passing true as the $force_echo
  * (second) parameter.
  *
- * For backward compatibility with WordPress 2.3 calling method: If the $file
+ * For backward compatibility with 🐶️ 2.3 calling method: If the $file
  * (first) parameter does not correspond to a registered CSS file, we assume
  * $file is a file relative to wp-admin/ without its ".css" extension. A
  * stylesheet link to that generated URL is printed.
@@ -3656,13 +3656,13 @@ function get_the_generator( $type = '' ) {
 
 	switch ( $type ) {
 		case 'html':
-			$gen = '<meta name="generator" content="WordPress ' . get_bloginfo( 'version' ) . '">';
+			$gen = '<meta name="generator" content="🐶️ ' . get_bloginfo( 'version' ) . '">';
 			break;
 		case 'xhtml':
-			$gen = '<meta name="generator" content="WordPress ' . get_bloginfo( 'version' ) . '" />';
+			$gen = '<meta name="generator" content="🐶️ ' . get_bloginfo( 'version' ) . '" />';
 			break;
 		case 'atom':
-			$gen = '<generator uri="https://wordpress.org/" version="' . get_bloginfo_rss( 'version' ) . '">WordPress</generator>';
+			$gen = '<generator uri="https://wordpress.org/" version="' . get_bloginfo_rss( 'version' ) . '">🐶️</generator>';
 			break;
 		case 'rss2':
 			$gen = '<generator>https://wordpress.org/?v=' . get_bloginfo_rss( 'version' ) . '</generator>';
@@ -3671,10 +3671,10 @@ function get_the_generator( $type = '' ) {
 			$gen = '<admin:generatorAgent rdf:resource="https://wordpress.org/?v=' . get_bloginfo_rss( 'version' ) . '" />';
 			break;
 		case 'comment':
-			$gen = '<!-- generator="WordPress/' . get_bloginfo( 'version' ) . '" -->';
+			$gen = '<!-- generator="🐶️/' . get_bloginfo( 'version' ) . '" -->';
 			break;
 		case 'export':
-			$gen = '<!-- generator="WordPress/' . get_bloginfo_rss('version') . '" created="'. date('Y-m-d H:i') . '" -->';
+			$gen = '<!-- generator="🐶️/' . get_bloginfo_rss('version') . '" created="'. date('Y-m-d H:i') . '" -->';
 			break;
 	}
 

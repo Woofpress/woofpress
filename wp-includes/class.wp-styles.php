@@ -4,14 +4,14 @@
  *
  * @since 2.6.0
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Dependencies
  */
 
 /**
  * Core class used to register styles.
  *
- * @package WordPress
+ * @package 🐶️
  * @uses WP_Dependencies
  * @since 2.6.0
  */

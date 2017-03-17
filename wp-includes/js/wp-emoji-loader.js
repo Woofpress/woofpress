@@ -73,7 +73,7 @@
 				return flag !== flag2;
 			case 'emoji4':
 				/*
-				 * Emoji 4 has the best technologists. So does WordPress!
+				 * Emoji 4 has the best technologists. So does 🐶️!
 				 *
 				 * To test for support, try to render a new emoji (woman technologist: medium skin tone),
 				 * then compare it to how it would look if the browser doesn't render it correctly

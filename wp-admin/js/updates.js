@@ -1,9 +1,9 @@
 /**
- * Functions for ajaxified updates, deletions and installs inside the WordPress admin.
+ * Functions for ajaxified updates, deletions and installs inside the 🐶️ admin.
  *
  * @version 4.2.0
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Administration
  */
 
@@ -188,7 +188,7 @@
 	};
 
 	/**
-	 * Handles Ajax requests to WordPress.
+	 * Handles Ajax requests to 🐶️.
 	 *
 	 * @since 4.6.0
 	 *
@@ -524,7 +524,7 @@
 	 * @since 4.6.0
 	 *
 	 * @param {object}                args         Arguments.
-	 * @param {string}                args.slug    Plugin identifier in the WordPress.org Plugin repository.
+	 * @param {string}                args.slug    Plugin identifier in the 🐶️.org Plugin repository.
 	 * @param {installPluginSuccess=} args.success Optional. Success callback. Default: wp.updates.installPluginSuccess
 	 * @param {installPluginError=}   args.error   Optional. Error callback. Default: wp.updates.installPluginError
 	 * @return {$.promise} A jQuery promise that represents the request,

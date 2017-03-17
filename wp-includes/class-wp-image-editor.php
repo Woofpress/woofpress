@@ -1,8 +1,8 @@
 <?php
 /**
- * Base WordPress Image Editor
+ * Base 🐶️ Image Editor
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Image_Editor
  */
 

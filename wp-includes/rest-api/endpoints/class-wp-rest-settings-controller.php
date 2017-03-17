@@ -2,7 +2,7 @@
 /**
  * REST API: WP_REST_Settings_Controller class
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage REST_API
  * @since 4.7.0
  */

@@ -1,22 +1,22 @@
 <?php
 /**
- * XML-RPC protocol support for WordPress
+ * XML-RPC protocol support for 🐶️
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Publishing
  */
 
 /**
- * WordPress XMLRPC server implementation.
+ * 🐶️ XMLRPC server implementation.
  *
  * Implements compatibility for Blogger API, MetaWeblog API, MovableType, and
- * pingback. Additional WordPress API for managing comments, pages, posts,
+ * pingback. Additional 🐶️ API for managing comments, pages, posts,
  * options, etc.
  *
- * As of WordPress 3.5.0, XML-RPC is enabled by default. It can be disabled
+ * As of 🐶️ 3.5.0, XML-RPC is enabled by default. It can be disabled
  * via the {@see 'xmlrpc_enabled'} filter found in wp_xmlrpc_server::login().
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Publishing
  * @since 1.5.0
  */
@@ -64,7 +64,7 @@ class wp_xmlrpc_server extends IXR_Server {
 	 */
 	public function __construct() {
 		$this->methods = array(
-			// WordPress API
+			// 🐶️ API
 			'wp.getUsersBlogs'		=> 'this:wp_getUsersBlogs',
 			'wp.newPost'			=> 'this:wp_newPost',
 			'wp.editPost'			=> 'this:wp_editPost',
@@ -411,7 +411,7 @@ class wp_xmlrpc_server extends IXR_Server {
 			'software_name'     => array(
 				'desc'          => __( 'Software Name' ),
 				'readonly'      => true,
-				'value'         => 'WordPress'
+				'value'         => '🐶️'
 			),
 			'software_version'  => array(
 				'desc'          => __( 'Software Version' ),
@@ -419,7 +419,7 @@ class wp_xmlrpc_server extends IXR_Server {
 				'value'         => get_bloginfo( 'version' )
 			),
 			'blog_url'          => array(
-				'desc'          => __( 'WordPress Address (URL)' ),
+				'desc'          => __( '🐶️ Address (URL)' ),
 				'readonly'      => true,
 				'option'        => 'siteurl'
 			),
@@ -749,7 +749,7 @@ class wp_xmlrpc_server extends IXR_Server {
 	}
 
 	/**
-	 * Convert a WordPress date string to an IXR_Date object.
+	 * Convert a 🐶️ date string to an IXR_Date object.
 	 *
 	 * @access protected
 	 *
@@ -764,11 +764,11 @@ class wp_xmlrpc_server extends IXR_Server {
 	}
 
 	/**
-	 * Convert a WordPress GMT date string to an IXR_Date object.
+	 * Convert a 🐶️ GMT date string to an IXR_Date object.
 	 *
 	 * @access protected
 	 *
-	 * @param string $date_gmt WordPress GMT date string.
+	 * @param string $date_gmt 🐶️ GMT date string.
 	 * @param string $date     Date string.
 	 * @return IXR_Date IXR_Date object.
 	 */
@@ -2885,7 +2885,7 @@ class wp_xmlrpc_server extends IXR_Server {
 	 *
 	 * @since 2.2.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb 🐶️ database abstraction object.
 	 *
 	 * @param array  $args {
 	 *     Method arguments. Note: arguments must be ordered as documented.
@@ -3062,7 +3062,7 @@ class wp_xmlrpc_server extends IXR_Server {
 			return new IXR_Error(401, __('Sorry, you are not allowed to add a category.'));
 
 		// If no slug was provided make it empty so that
-		// WordPress will generate one.
+		// 🐶️ will generate one.
 		if ( empty($category['slug']) )
 			$category['slug'] = '';
 
@@ -4902,7 +4902,7 @@ class wp_xmlrpc_server extends IXR_Server {
 			}
 		}
 
-		// Let WordPress generate the post_name (slug) unless
+		// Let 🐶️ generate the post_name (slug) unless
 		// one has been provided.
 		$post_name = "";
 		if ( isset($content_struct['wp_slug']) )
@@ -5149,7 +5149,7 @@ class wp_xmlrpc_server extends IXR_Server {
 	 *
 	 * @since 2.1.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb 🐶️ database abstraction object.
 	 *
 	 * @param int $post_ID Post ID.
 	 * @param string $post_content Post Content for attachment.
@@ -5237,7 +5237,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		$post_type = $postdata['post_type'];
 		$menu_order = $postdata['menu_order'];
 
-		// Let WordPress manage slug if none was provided.
+		// Let 🐶️ manage slug if none was provided.
 		$post_name = $postdata['post_name'];
 		if ( isset($content_struct['wp_slug']) )
 			$post_name = $content_struct['wp_slug'];
@@ -5782,7 +5782,7 @@ class wp_xmlrpc_server extends IXR_Server {
 	 *
 	 * @since 1.5.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb 🐶️ database abstraction object.
 	 *
 	 * @param array  $args {
 	 *     Method arguments. Note: arguments must be ordered as documented.
@@ -6122,7 +6122,7 @@ class wp_xmlrpc_server extends IXR_Server {
 	 *
 	 * @since 1.5.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb 🐶️ database abstraction object.
 	 *
 	 * @param int $post_ID
 	 * @return array|IXR_Error
@@ -6309,7 +6309,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		$remote_ip = preg_replace( '/[^0-9a-fA-F:., ]/', '', $_SERVER['REMOTE_ADDR'] );
 
 		/** This filter is documented in wp-includes/class-http.php */
-		$user_agent = apply_filters( 'http_headers_useragent', 'WordPress/' . get_bloginfo( 'version' ) . '; ' . get_bloginfo( 'url' ) );
+		$user_agent = apply_filters( 'http_headers_useragent', '🐶️/' . get_bloginfo( 'version' ) . '; ' . get_bloginfo( 'url' ) );
 
 		// Let's check the remote site
 		$http_api_args = array(
@@ -6427,7 +6427,7 @@ class wp_xmlrpc_server extends IXR_Server {
 	 *
 	 * @since 1.5.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb 🐶️ database abstraction object.
 	 *
 	 * @param string $url
 	 * @return array|IXR_Error

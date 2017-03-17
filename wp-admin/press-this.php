@@ -2,13 +2,13 @@
 /**
  * Press This Display and Handler.
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Press_This
  */
 
 define('IFRAME_REQUEST' , true);
 
-/** WordPress Administration Bootstrap */
+/** 🐶️ Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
 if ( ! current_user_can( 'edit_posts' ) || ! current_user_can( get_post_type_object( 'post' )->cap->create_posts ) ) {

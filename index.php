@@ -1,17 +1,17 @@
 <?php
 /**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
+ * Front to the 🐶️ application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells 🐶️ to load the theme.
  *
- * @package WordPress
+ * @package 🐶️
  */
 
 /**
- * Tells WordPress to load the WordPress theme and output it.
+ * Tells 🐶️ to load the 🐶️ theme and output it.
  *
  * @var bool
  */
 define('WP_USE_THEMES', true);
 
-/** Loads the WordPress Environment and Template */
+/** Loads the 🐶️ Environment and Template */
 require( dirname( __FILE__ ) . '/wp-blog-header.php' );

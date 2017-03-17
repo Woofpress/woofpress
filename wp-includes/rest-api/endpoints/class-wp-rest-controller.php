@@ -2,7 +2,7 @@
 /**
  * REST API: WP_REST_Controller class
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage REST_API
  * @since 4.7.0
  */
@@ -191,7 +191,7 @@ abstract class WP_REST_Controller {
 	 * @since 4.7.0
 	 * @access public
 	 *
-	 * @param mixed           $item    WordPress representation of the item.
+	 * @param mixed           $item    🐶️ representation of the item.
 	 * @param WP_REST_Request $request Request object.
 	 * @return WP_Error|WP_REST_Response Response object on success, or WP_Error object on failure.
 	 */

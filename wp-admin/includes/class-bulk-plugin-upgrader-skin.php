@@ -2,13 +2,13 @@
 /**
  * Upgrader API: Bulk_Plugin_Upgrader_Skin class
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Upgrader
  * @since 4.6.0
  */
 
 /**
- * Bulk Plugin Upgrader Skin for WordPress Plugin Upgrades.
+ * Bulk Plugin Upgrader Skin for 🐶️ Plugin Upgrades.
  *
  * @since 3.0.0
  * @since 4.6.0 Moved to its own file from wp-admin/includes/class-wp-upgrader-skins.php.
@@ -47,7 +47,7 @@ class Bulk_Plugin_Upgrader_Skin extends Bulk_Upgrader_Skin {
 		parent::bulk_footer();
 		$update_actions =  array(
 			'plugins_page' => '<a href="' . self_admin_url( 'plugins.php' ) . '" target="_parent">' . __( 'Return to Plugins page' ) . '</a>',
-			'updates_page' => '<a href="' . self_admin_url( 'update-core.php' ) . '" target="_parent">' . __( 'Return to WordPress Updates page' ) . '</a>'
+			'updates_page' => '<a href="' . self_admin_url( 'update-core.php' ) . '" target="_parent">' . __( 'Return to 🐶️ Updates page' ) . '</a>'
 		);
 		if ( ! current_user_can( 'activate_plugins' ) )
 			unset( $update_actions['plugins_page'] );

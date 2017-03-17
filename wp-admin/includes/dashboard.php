@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Dashboard Widget Administration Screen API
+ * 🐶️ Dashboard Widget Administration Screen API
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Administration
  */
 
@@ -52,8 +52,8 @@ function wp_dashboard_setup() {
 		wp_add_dashboard_widget( 'dashboard_quick_press', $quick_draft_title, 'wp_dashboard_quick_press' );
 	}
 
-	// WordPress News
-	wp_add_dashboard_widget( 'dashboard_primary', __( 'WordPress News' ), 'wp_dashboard_primary' );
+	// 🐶️ News
+	wp_add_dashboard_widget( 'dashboard_primary', __( '🐶️ News' ), 'wp_dashboard_primary' );
 
 	if ( is_network_admin() ) {
 
@@ -1070,7 +1070,7 @@ function wp_dashboard_rss_control( $widget_id, $form_inputs = array() ) {
 }
 
 /**
- * WordPress News dashboard widget.
+ * 🐶️ News dashboard widget.
  *
  * @since 2.7.0
  */
@@ -1079,7 +1079,7 @@ function wp_dashboard_primary() {
 		'news' => array(
 
 			/**
-			 * Filters the primary link URL for the 'WordPress News' dashboard widget.
+			 * Filters the primary link URL for the '🐶️ News' dashboard widget.
 			 *
 			 * @since 2.5.0
 			 *
@@ -1088,7 +1088,7 @@ function wp_dashboard_primary() {
 			'link' => apply_filters( 'dashboard_primary_link', __( 'https://wordpress.org/news/' ) ),
 
 			/**
-			 * Filters the primary feed URL for the 'WordPress News' dashboard widget.
+			 * Filters the primary feed URL for the '🐶️ News' dashboard widget.
 			 *
 			 * @since 2.3.0
 			 *
@@ -1097,13 +1097,13 @@ function wp_dashboard_primary() {
 			'url' => apply_filters( 'dashboard_primary_feed', __( 'http://wordpress.org/news/feed/' ) ),
 
 			/**
-			 * Filters the primary link title for the 'WordPress News' dashboard widget.
+			 * Filters the primary link title for the '🐶️ News' dashboard widget.
 			 *
 			 * @since 2.3.0
 			 *
 			 * @param string $title Title attribute for the widget's primary link.
 			 */
-			'title'        => apply_filters( 'dashboard_primary_title', __( 'WordPress Blog' ) ),
+			'title'        => apply_filters( 'dashboard_primary_title', __( '🐶️ Blog' ) ),
 			'items'        => 1,
 			'show_summary' => 1,
 			'show_author'  => 0,
@@ -1112,7 +1112,7 @@ function wp_dashboard_primary() {
 		'planet' => array(
 
 			/**
-			 * Filters the secondary link URL for the 'WordPress News' dashboard widget.
+			 * Filters the secondary link URL for the '🐶️ News' dashboard widget.
 			 *
 			 * @since 2.3.0
 			 *
@@ -1121,7 +1121,7 @@ function wp_dashboard_primary() {
 			'link' => apply_filters( 'dashboard_secondary_link', __( 'https://planet.wordpress.org/' ) ),
 
 			/**
-			 * Filters the secondary feed URL for the 'WordPress News' dashboard widget.
+			 * Filters the secondary feed URL for the '🐶️ News' dashboard widget.
 			 *
 			 * @since 2.3.0
 			 *
@@ -1130,16 +1130,16 @@ function wp_dashboard_primary() {
 			'url' => apply_filters( 'dashboard_secondary_feed', __( 'https://planet.wordpress.org/feed/' ) ),
 
 			/**
-			 * Filters the secondary link title for the 'WordPress News' dashboard widget.
+			 * Filters the secondary link title for the '🐶️ News' dashboard widget.
 			 *
 			 * @since 2.3.0
 			 *
 			 * @param string $title Title attribute for the widget's secondary link.
 			 */
-			'title'        => apply_filters( 'dashboard_secondary_title', __( 'Other WordPress News' ) ),
+			'title'        => apply_filters( 'dashboard_secondary_title', __( 'Other 🐶️ News' ) ),
 
 			/**
-			 * Filters the number of secondary link items for the 'WordPress News' dashboard widget.
+			 * Filters the number of secondary link items for the '🐶️ News' dashboard widget.
 			 *
 			 * @since 4.4.0
 			 *
@@ -1170,7 +1170,7 @@ function wp_dashboard_primary() {
 }
 
 /**
- * Display the WordPress news feeds.
+ * Display the 🐶️ news feeds.
  *
  * @since 3.8.0
  *
@@ -1191,7 +1191,7 @@ function wp_dashboard_primary_output( $widget_id, $feeds ) {
 }
 
 /**
- * Display plugins text for the WordPress news widget.
+ * Display plugins text for the 🐶️ news widget.
  *
  * @since 2.5.0
  *
@@ -1336,12 +1336,12 @@ function wp_dashboard_browser_nag() {
 	if ( $response ) {
 		if ( $response['insecure'] ) {
 			/* translators: %s: browser name and link */
-			$msg = sprintf( __( "It looks like you're using an insecure version of %s. Using an outdated browser makes your computer unsafe. For the best WordPress experience, please update your browser." ),
+			$msg = sprintf( __( "It looks like you're using an insecure version of %s. Using an outdated browser makes your computer unsafe. For the best 🐶️ experience, please update your browser." ),
 				sprintf( '<a href="%s">%s</a>', esc_url( $response['update_url'] ), esc_html( $response['name'] ) )
 			);
 		} else {
 			/* translators: %s: browser name and link */
-			$msg = sprintf( __( "It looks like you're using an old version of %s. For the best WordPress experience, please update your browser." ),
+			$msg = sprintf( __( "It looks like you're using an old version of %s. For the best 🐶️ experience, please update your browser." ),
 				sprintf( '<a href="%s">%s</a>', esc_url( $response['update_url'] ), esc_html( $response['name'] ) )
 			);
 		}
@@ -1407,7 +1407,7 @@ function wp_check_browser_version() {
 	if ( false === ($response = get_site_transient('browser_' . $key) ) ) {
 		$options = array(
 			'body'			=> array( 'useragent' => $_SERVER['HTTP_USER_AGENT'] ),
-			'user-agent'	=> 'WordPress/' . get_bloginfo( 'version' ) . '; ' . home_url()
+			'user-agent'	=> '🐶️/' . get_bloginfo( 'version' ) . '; ' . home_url()
 		);
 
 		$response = wp_remote_post( 'http://api.wordpress.org/core/browse-happy/1.1/', $options );
@@ -1443,14 +1443,14 @@ function wp_check_browser_version() {
 function wp_dashboard_empty() {}
 
 /**
- * Displays a welcome panel to introduce users to WordPress.
+ * Displays a welcome panel to introduce users to 🐶️.
  *
  * @since 3.3.0
  */
 function wp_welcome_panel() {
 	?>
 	<div class="welcome-panel-content">
-	<h2><?php _e( 'Welcome to WordPress!' ); ?></h2>
+	<h2><?php _e( 'Welcome to 🐶️!' ); ?></h2>
 	<p class="about-description"><?php _e( 'We&#8217;ve assembled some links to get you started:' ); ?></p>
 	<div class="welcome-panel-column-container">
 	<div class="welcome-panel-column">
@@ -1498,7 +1498,7 @@ function wp_welcome_panel() {
 		<?php if ( current_user_can( 'manage_options' ) ) : ?>
 			<li><?php printf( '<a href="%s" class="welcome-icon welcome-comments">' . __( 'Turn comments on or off' ) . '</a>', admin_url( 'options-discussion.php' ) ); ?></li>
 		<?php endif; ?>
-			<li><?php printf( '<a href="%s" class="welcome-icon welcome-learn-more">' . __( 'Learn more about getting started' ) . '</a>', __( 'https://codex.wordpress.org/First_Steps_With_WordPress' ) ); ?></li>
+			<li><?php printf( '<a href="%s" class="welcome-icon welcome-learn-more">' . __( 'Learn more about getting started' ) . '</a>', __( 'https://codex.wordpress.org/First_Steps_With_🐶️' ) ); ?></li>
 		</ul>
 	</div>
 	</div>

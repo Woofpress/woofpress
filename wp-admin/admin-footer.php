@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Template Footer
+ * 🐶️ Administration Template Footer
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Administration
  */
 
@@ -31,7 +31,7 @@ global $hook_suffix;
 	?>
 	<p id="footer-left" class="alignleft">
 		<?php
-		$text = sprintf( __( 'Thank you for creating with <a href="%s">WordPress</a>.' ), __( 'https://wordpress.org/' ) );
+		$text = sprintf( __( 'Thank you for creating with <a href="%s">🐶️</a>.' ), __( 'https://wordpress.org/' ) );
 		/**
 		 * Filters the "Thank you" text displayed in the admin footer.
 		 *
@@ -47,7 +47,7 @@ global $hook_suffix;
 		/**
 		 * Filters the version/update text displayed in the admin footer.
 		 *
-		 * WordPress prints the current version and update information,
+		 * 🐶️ prints the current version and update information,
 		 * using core_update_footer() at priority 10.
 		 *
 		 * @since 2.3.0

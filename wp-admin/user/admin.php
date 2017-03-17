@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress User Administration Bootstrap
+ * 🐶️ User Administration Bootstrap
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Administration
  * @since 3.1.0
  */

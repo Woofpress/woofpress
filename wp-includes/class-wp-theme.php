@@ -2,7 +2,7 @@
 /**
  * WP_Theme Class
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Theme
  * @since 3.4.0
  */
@@ -48,8 +48,8 @@ final class WP_Theme implements ArrayAccess {
 	 * @var array
 	 */
 	private static $default_themes = array(
-		'classic'         => 'WordPress Classic',
-		'default'         => 'WordPress Default',
+		'classic'         => '🐶️ Classic',
+		'default'         => '🐶️ Default',
 		'twentyten'       => 'Twenty Ten',
 		'twentyeleven'    => 'Twenty Eleven',
 		'twentytwelve'    => 'Twenty Twelve',
@@ -599,7 +599,7 @@ final class WP_Theme implements ArrayAccess {
 	 *
 	 * Use the get_template() method, not the 'Template' header, for finding the template.
 	 * The 'Template' header is only good for what was written in the style.css, while
-	 * get_template() takes into account where WordPress actually located the theme and
+	 * get_template() takes into account where 🐶️ actually located the theme and
 	 * whether it is actually valid.
 	 *
 	 * @since 3.4.0
@@ -1239,7 +1239,7 @@ final class WP_Theme implements ArrayAccess {
 	}
 
 	/**
-	 * Determines the latest WordPress default theme that is installed.
+	 * Determines the latest 🐶️ default theme that is installed.
 	 *
 	 * This hits the filesystem.
 	 *

@@ -2,7 +2,7 @@
 /**
  * Template for displaying page content in the showcase.php page template
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */

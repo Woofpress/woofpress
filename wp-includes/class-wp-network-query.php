@@ -2,7 +2,7 @@
 /**
  * Network API: WP_Network_Query class
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Multisite
  * @since 4.6.0
  */
@@ -174,7 +174,7 @@ class WP_Network_Query {
 	}
 
 	/**
-	 * Sets up the WordPress query for retrieving networks.
+	 * Sets up the 🐶️ query for retrieving networks.
 	 *
 	 * @since 4.6.0
 	 * @access public
@@ -456,7 +456,7 @@ class WP_Network_Query {
 	 * @since 4.6.0
 	 * @access private
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb 🐶️ database abstraction object.
 	 */
 	private function set_found_networks() {
 		global $wpdb;
@@ -482,7 +482,7 @@ class WP_Network_Query {
 	 * @since 4.6.0
 	 * @access protected
 	 *
-	 * @global wpdb  $wpdb WordPress database abstraction object.
+	 * @global wpdb  $wpdb 🐶️ database abstraction object.
 	 *
 	 * @param string $string  Search string.
 	 * @param array  $columns Columns to search.
@@ -508,7 +508,7 @@ class WP_Network_Query {
 	 * @since 4.6.0
 	 * @access protected
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb 🐶️ database abstraction object.
 	 *
 	 * @param string $orderby Alias for the field to order by.
 	 * @return string|false Value to used in the ORDER clause. False otherwise.

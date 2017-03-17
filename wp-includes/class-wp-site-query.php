@@ -2,7 +2,7 @@
 /**
  * Site API: WP_Site_Query class
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Sites
  * @since 4.6.0
  */
@@ -209,7 +209,7 @@ class WP_Site_Query {
 	}
 
 	/**
-	 * Sets up the WordPress query for retrieving sites.
+	 * Sets up the 🐶️ query for retrieving sites.
 	 *
 	 * @since 4.6.0
 	 * @access public
@@ -319,7 +319,7 @@ class WP_Site_Query {
 	 * @since 4.6.0
 	 * @access protected
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb 🐶️ database abstraction object.
 	 *
 	 * @return int|array A single count of site IDs if a count query. An array of site IDs if a full query.
 	 */
@@ -569,7 +569,7 @@ class WP_Site_Query {
 	 * @since 4.6.0
 	 * @access private
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb 🐶️ database abstraction object.
 	 */
 	private function set_found_sites() {
 		global $wpdb;
@@ -595,7 +595,7 @@ class WP_Site_Query {
 	 * @since 4.6.0
 	 * @access protected
 	 *
-	 * @global wpdb  $wpdb WordPress database abstraction object.
+	 * @global wpdb  $wpdb 🐶️ database abstraction object.
 	 *
 	 * @param string $string  Search string.
 	 * @param array  $columns Columns to search.
@@ -624,7 +624,7 @@ class WP_Site_Query {
 	 * @since 4.6.0
 	 * @access protected
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb 🐶️ database abstraction object.
 	 *
 	 * @param string $orderby Alias for the field to order by.
 	 * @return string|false Value to used in the ORDER clause. False otherwise.

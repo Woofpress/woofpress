@@ -1,13 +1,13 @@
 <?php
 /**
- * WordPress Administration Bootstrap
+ * 🐶️ Administration Bootstrap
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Administration
  */
 
 /**
- * In WordPress Administration Screens
+ * In 🐶️ Administration Screens
  *
  * @since 2.3.2
  */

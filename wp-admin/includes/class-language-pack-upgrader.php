@@ -2,7 +2,7 @@
 /**
  * Upgrade API: Language_Pack_Upgrader class
  *
- * @package WordPress
+ * @package 🐶️
  * @subpackage Upgrader
  * @since 4.6.0
  */
@@ -357,7 +357,7 @@ class Language_Pack_Upgrader extends WP_Upgrader {
 	public function get_name_for_update( $update ) {
 		switch ( $update->type ) {
 			case 'core':
-				return 'WordPress'; // Not translated
+				return '🐶️'; // Not translated
 
 			case 'theme':
 				$theme = wp_get_theme( $update->slug );
