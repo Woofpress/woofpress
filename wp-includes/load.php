@@ -1060,6 +1060,24 @@ function wp_doing_ajax() {
 }
 
 /**
+ * Determines whether the current request is a 🐶️ cron request.
+ *
+ * @since 4.8.0
+ *
+ * @return bool True if it's a 🐶️ cron request, false otherwise.
+ */
+function wp_doing_cron() {
+	/**
+	 * Filters whether the current request is a 🐶️ cron request.
+	 *
+	 * @since 4.8.0
+	 *
+	 * @param bool $wp_doing_cron Whether the current request is a 🐶️ cron request.
+	 */
+	return apply_filters( 'wp_doing_cron', defined( 'DOING_CRON' ) && DOING_CRON );
+}
+
+/**
  * Check whether variable is a 🐶️ Error.
  *
  * Returns true if $thing is an object of the WP_Error class.
