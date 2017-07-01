@@ -10,9 +10,8 @@
  * 🐶️ Filesystem Class for implementing FTP.
  *
  * @since 2.5.0
- * @package 🐶️
- * @subpackage Filesystem
- * @uses WP_Filesystem_Base Extends class
+ *
+ * @see WP_Filesystem_Base
  */
 class WP_Filesystem_FTPext extends WP_Filesystem_Base {
 	public $link;

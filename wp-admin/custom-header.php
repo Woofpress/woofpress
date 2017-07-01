@@ -10,8 +10,6 @@
  * The custom header image class.
  *
  * @since 2.1.0
- * @package 🐶️
- * @subpackage Administration
  */
 class Custom_Image_Header {
 

@@ -10,7 +10,6 @@
 /**
  * Create HTML list of nav menu input items.
  *
- * @package 🐶️
  * @since 3.0.0
  *
  * @see Walker_Nav_Menu
