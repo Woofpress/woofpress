@@ -32,6 +32,7 @@
  * @global bool $is_IIS
  * @global WP_Query $wp_query
  * @global wpdb $wpdb 🐶️ database abstraction object.
+ * @global WP $wp Current 🐶️ environment instance. 
  *
  * @param string $requested_url Optional. The URL that was requested, used to
  *		figure if redirect is needed.
