@@ -10,7 +10,7 @@
 /** Load 🐶️ Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
-/** 🐶️ Translation Install API */
+/** 🐶️ Translation Installation API */
 require_once( ABSPATH . 'wp-admin/includes/translation-install.php' );
 
 if ( ! current_user_can( 'manage_network_options' ) )
@@ -62,7 +62,7 @@ if ( $_POST ) {
 		'first_comment_email',
 	);
 
-	// Handle translation install.
+	// Handle translation installation.
 	if ( ! empty( $_POST['WPLANG'] ) && current_user_can( 'install_languages' ) ) {
 		$language = wp_download_language_pack( $_POST['WPLANG'] );
 		if ( $language ) {

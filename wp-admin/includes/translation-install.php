@@ -1,6 +1,6 @@
 <?php
 /**
- * 🐶️ Translation Install Administration API
+ * 🐶️ Translation Installation Administration API
  *
  * @package 🐶️
  * @subpackage Administration
@@ -24,7 +24,7 @@ function translations_api( $type, $args = null ) {
 	}
 
 	/**
-	 * Allows a plugin to override the 🐶️.org Translation Install API entirely.
+	 * Allows a plugin to override the 🐶️.org Translation Installation API entirely.
 	 *
 	 * @since 4.0.0
 	 *
@@ -93,7 +93,7 @@ function translations_api( $type, $args = null ) {
 	}
 
 	/**
-	 * Filters the Translation Install API response results.
+	 * Filters the Translation Installation API response results.
 	 *
 	 * @since 4.0.0
 	 *

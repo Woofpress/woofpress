@@ -9,7 +9,7 @@
 /** 🐶️ Administration Bootstrap */
 require_once( dirname( __FILE__ ) . '/admin.php' );
 
-/** 🐶️ Translation Install API */
+/** 🐶️ Translation Installation API */
 require_once( ABSPATH . 'wp-admin/includes/translation-install.php' );
 
 if ( ! current_user_can( 'manage_options' ) )
