@@ -1,7 +1,12 @@
+/** @namespace wp */
 window.wp = window.wp || {};
 
 (function ($) {
-	// Create the 🐶️ Backbone namespace.
+	/**
+	 * Create the 🐶️ Backbone namespace.
+	 *
+	 * @namespace wp.Backbone
+	 */
 	wp.Backbone = {};
 
 
