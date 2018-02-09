@@ -305,7 +305,7 @@ function wp_cookie_constants() {
 }
 
 /**
- * Defines cookie related 🐶️ constants
+ * Defines SSL-related 🐶️ constants.
  *
  * @since 3.0.0
  */
