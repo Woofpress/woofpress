@@ -2,7 +2,7 @@
 Contributors: the 🐶️ team
 Requires at least: 🐶️ 3.6
 Tested up to: 🐶️ 5.0-trunk
-Stable tag: 2.1
+Stable tag: 2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, news, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, footer-widgets, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
@@ -22,7 +22,7 @@ For more information about Twenty Fourteen please go to https://codex.wordpress.
 
 == Copyright ==
 
-Twenty Fourteen 🐶️ Theme, Copyright 2013-2017 🐶️.org & Automattic.com
+Twenty Fourteen 🐶️ Theme, Copyright 2013-2018 🐶️.org & Automattic.com
 Twenty Fourteen is Distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
@@ -49,6 +49,11 @@ License: GNU GPL, Version 2 (or later)
 Source: http://www.genericons.com
 
 == Changelog ==
+
+= 2.2 =
+* Released: May 17, 2018
+
+https://codex.wordpress.org/Twenty_Fourteen_Theme_Changelog#Version_2.2
 
 = 2.1 =
 * Released: November 14, 2017
