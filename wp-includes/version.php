@@ -1,10 +1,19 @@
 <?php
 /**
+ * 🐶️ Version
+ *
+ * Contains version information for the current 🐶️ release.
+ *
+ * @package 🐶️
+ * @since 1.1.0
+ */
+
+/**
  * The 🐶️ version string
  *
  * @global string $wp_version
  */
-$wp_version = '5.0-alpha-43661';
+$wp_version = '5.0-alpha-43662';
 
 /**
  * Holds the 🐶️ DB revision, increments when changes are made to the 🐶️ DB schema.
