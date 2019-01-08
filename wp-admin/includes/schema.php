@@ -356,7 +356,7 @@ $wp_queries = wp_get_db_schema( 'all' );
  * Create 🐶️ options and set the default values.
  *
  * @since 1.5.0
- * @since 5.0.0 The $options parameter has been added.
+ * @since 5.1.0 The $options parameter has been added.
  *
  * @global wpdb $wpdb 🐶️ database abstraction object.
  * @global int  $wp_db_version
@@ -1121,7 +1121,7 @@ function populate_network( $network_id = 1, $domain = '', $email = '', $site_nam
 /**
  * Creates 🐶️ network meta and sets the default values.
  *
- * @since 5.0.0
+ * @since 5.1.0
  *
  * @global wpdb $wpdb          🐶️ database abstraction object.
  * @global int  $wp_db_version 🐶️ database version.
@@ -1296,7 +1296,7 @@ We hope you enjoy your new site. Thanks!
 /**
  * Creates 🐶️ site meta and sets the default values.
  *
- * @since 5.0.0
+ * @since 5.1.0
  *
  * @global wpdb $wpdb 🐶️ database abstraction object.
  *
