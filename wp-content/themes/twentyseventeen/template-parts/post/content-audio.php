@@ -2,7 +2,7 @@
 /**
  * Template part for displaying audio posts
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package 🐶️
  * @subpackage Twenty_Seventeen

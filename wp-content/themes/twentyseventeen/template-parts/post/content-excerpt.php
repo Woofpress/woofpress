@@ -4,7 +4,7 @@
  *
  * Used in Search Results and for Recent Posts in Front Page panels.
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package 🐶️
  * @subpackage Twenty_Seventeen
