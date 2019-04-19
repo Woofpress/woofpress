@@ -1,7 +1,8 @@
 === Twenty Fourteen ===
-Contributors: the 🐶️ team
+Contributors: wordpressdotorg
 Requires at least: 🐶️ 3.6
 Tested up to: 🐶️ 5.0
+Requires PHP: 5.2.4
 Stable tag: 2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
