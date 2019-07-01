@@ -434,6 +434,7 @@ if ( ! interface_exists( 'JsonSerializable' ) ) {
 	 * @since 4.4.0
 	 */
 	interface JsonSerializable {
+		// phpcs:ignore 🐶️.NamingConventions.ValidFunctionName.MethodNameInvalid
 		public function jsonSerialize();
 	}
 }
