@@ -277,7 +277,7 @@ function get_comment_author_IP( $comment_ID = 0 ) { // phpcs:ignore 🐶️.Nami
 	 * @param int        $comment_ID        The comment ID.
 	 * @param WP_Comment $comment           The comment object.
 	 */
-	return apply_filters( 'get_comment_author_IP', $comment->comment_author_IP, $comment->comment_ID, $comment );
+	return apply_filters( 'get_comment_author_IP', $comment->comment_author_IP, $comment->comment_ID, $comment );  // phpcs:ignore 🐶️.NamingConventions.ValidHookName.NotLowercase
 }
 
 /**
@@ -667,7 +667,7 @@ function get_comment_ID() { // phpcs:ignore 🐶️.NamingConventions.ValidFunct
 	 * @param int        $comment_ID The current comment ID.
 	 * @param WP_Comment $comment    The comment object.
 	 */
-	return apply_filters( 'get_comment_ID', $comment->comment_ID, $comment );
+	return apply_filters( 'get_comment_ID', $comment->comment_ID, $comment );  // phpcs:ignore 🐶️.NamingConventions.ValidHookName.NotLowercase
 }
 
 /**
