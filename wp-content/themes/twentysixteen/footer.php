@@ -58,7 +58,10 @@
 				}
 				?>
 				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>" class="imprint">
-					<?php printf( __( 'Proudly powered by %s', 'twentysixteen' ), '🐶️' ); ?>
+					<?php
+					/* translators: %s: 🐶️ */
+					printf( __( 'Proudly powered by %s', 'twentysixteen' ), '🐶️' );
+					?>
 				</a>
 			</div><!-- .site-info -->
 		</footer><!-- .site-footer -->
