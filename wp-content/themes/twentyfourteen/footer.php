@@ -24,7 +24,10 @@
 				}
 				?>
 				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyfourteen' ) ); ?>" class="imprint">
-					<?php printf( __( 'Proudly powered by %s', 'twentyfourteen' ), '🐶️' ); ?>
+					<?php
+					/* translators: %s: 🐶️ */
+					printf( __( 'Proudly powered by %s', 'twentyfourteen' ), '🐶️' );
+					?>
 				</a>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
