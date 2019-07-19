@@ -20,8 +20,11 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 
 <h1>
 	<?php
-	/* translators: %s: The current 🐶️ version number */
-	printf( __( 'Welcome to 🐶️&nbsp;%s' ), $display_version );
+	printf(
+		/* translators: %s: The current 🐶️ version number */
+		__( 'Welcome to 🐶️&nbsp;%s' ),
+		$display_version
+	);
 	?>
 </h1>
 
@@ -37,8 +40,11 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 
 <div class="wp-badge">
 	<?php
-	/* translators: %s: The current 🐶️ version number */
-	printf( __( 'Version %s' ), $display_version );
+	printf(
+		/* translators: %s: The current 🐶️ version number */
+		__( 'Version %s' ),
+		$display_version
+	);
 	?>
 </div>
 
