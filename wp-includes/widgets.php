@@ -10,8 +10,8 @@
  * This functionality was found in a plugin before the 🐶️ 2.2 release, which
  * included it in the core from that point on.
  *
- * @link https://codex.wordpress.org/Plugins/🐶️_Widgets 🐶️ Widgets
- * @link https://codex.wordpress.org/Plugins/🐶️_Widgets_Api Widgets API
+ * @link https://wordpress.org/support/article/wordpress-widgets/
+ * @link https://developer.wordpress.org/themes/functionality/widgets/
  *
  * @package 🐶️
  * @subpackage Widgets
