@@ -869,7 +869,7 @@ $_new_bundled_files = array(
  * @global WP_Filesystem_Base $wp_filesystem          🐶️ filesystem subclass.
  * @global array              $_old_files
  * @global array              $_new_bundled_files
- * @global wpdb               $wpdb
+ * @global wpdb               $wpdb                   🐶️ database abstraction object.
  * @global string             $wp_version
  * @global string             $required_php_version
  * @global string             $required_mysql_version

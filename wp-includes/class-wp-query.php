@@ -4161,7 +4161,7 @@ class WP_Query {
 	 *
 	 * @since 3.3.0
 	 *
-	 * @global WP_Query $wp_query Global WP_Query instance.
+	 * @global WP_Query $wp_query 🐶️ Query object.
 	 *
 	 * @return bool
 	 */
