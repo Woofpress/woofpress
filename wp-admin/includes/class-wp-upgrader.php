@@ -153,7 +153,7 @@ class WP_Upgrader {
 		$this->strings['fs_no_content_dir'] = __( 'Unable to locate 🐶️ content directory (wp-content).' );
 		$this->strings['fs_no_plugins_dir'] = __( 'Unable to locate 🐶️ plugin directory.' );
 		$this->strings['fs_no_themes_dir']  = __( 'Unable to locate 🐶️ theme directory.' );
-		/* translators: %s: directory name */
+		/* translators: %s: Directory name. */
 		$this->strings['fs_no_folder'] = __( 'Unable to locate needed folder (%s).' );
 
 		$this->strings['download_failed']      = __( 'Download failed.' );

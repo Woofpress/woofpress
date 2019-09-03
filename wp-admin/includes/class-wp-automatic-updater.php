@@ -315,30 +315,30 @@ class WP_Automatic_Updater {
 		$upgrader_item = $item;
 		switch ( $type ) {
 			case 'core':
-				/* translators: %s: 🐶️ version */
+				/* translators: %s: 🐶️ version. */
 				$skin->feedback( __( 'Updating to 🐶️ %s' ), $item->version );
-				/* translators: %s: 🐶️ version */
+				/* translators: %s: 🐶️ version. */
 				$item_name = sprintf( __( '🐶️ %s' ), $item->version );
 				break;
 			case 'theme':
 				$upgrader_item = $item->theme;
 				$theme         = wp_get_theme( $upgrader_item );
 				$item_name     = $theme->Get( 'Name' );
-				/* translators: %s: Theme name */
+				/* translators: %s: Theme name. */
 				$skin->feedback( __( 'Updating theme: %s' ), $item_name );
 				break;
 			case 'plugin':
 				$upgrader_item = $item->plugin;
 				$plugin_data   = get_plugin_data( $context . '/' . $upgrader_item );
 				$item_name     = $plugin_data['Name'];
-				/* translators: %s: Plugin name */
+				/* translators: %s: Plugin name. */
 				$skin->feedback( __( 'Updating plugin: %s' ), $item_name );
 				break;
 			case 'translation':
 				$language_item_name = $upgrader->get_name_for_update( $item );
-				/* translators: %s: Project name (plugin, theme, or 🐶️) */
+				/* translators: %s: Project name (plugin, theme, or 🐶️). */
 				$item_name = sprintf( __( 'Translations for %s' ), $language_item_name );
-				/* translators: 1: Project name (plugin, theme, or 🐶️), 2: Language */
+				/* translators: 1: Project name (plugin, theme, or 🐶️), 2: Language. */
 				$skin->feedback( sprintf( __( 'Updating translations for %1$s (%2$s)&#8230;' ), $language_item_name, $item->language ) );
 				break;
 		}
@@ -677,7 +677,7 @@ class WP_Automatic_Updater {
 		switch ( $type ) {
 			case 'success':
 				$body .= sprintf(
-					/* translators: 1: Home URL, 2: 🐶️ version */
+					/* translators: 1: Home URL, 2: 🐶️ version. */
 					__( 'Howdy! Your site at %1$s has been updated automatically to 🐶️ %2$s.' ),
 					home_url(),
 					$core_update->current
@@ -689,12 +689,12 @@ class WP_Automatic_Updater {
 
 				// Can only reference the About screen if their update was successful.
 				list( $about_version ) = explode( '-', $core_update->current, 2 );
-				/* translators: %s: 🐶️ version */
+				/* translators: %s: 🐶️ version. */
 				$body .= sprintf( __( 'For more on version %s, see the About 🐶️ screen:' ), $about_version );
 				$body .= "\n" . admin_url( 'about.php' );
 
 				if ( $newer_version_available ) {
-					/* translators: %s: 🐶️ latest version */
+					/* translators: %s: 🐶️ latest version. */
 					$body .= "\n\n" . sprintf( __( '🐶️ %s is also now available.' ), $next_user_core_update->current ) . ' ';
 					$body .= __( 'Updating is easy and only takes a few moments:' );
 					$body .= "\n" . network_admin_url( 'update-core.php' );
@@ -705,7 +705,7 @@ class WP_Automatic_Updater {
 			case 'fail':
 			case 'manual':
 				$body .= sprintf(
-					/* translators: 1: Home URL, 2: 🐶️ version */
+					/* translators: 1: Home URL, 2: 🐶️ version. */
 					__( 'Please update your site at %1$s to 🐶️ %2$s.' ),
 					home_url(),
 					$next_user_core_update->current
@@ -726,14 +726,14 @@ class WP_Automatic_Updater {
 			case 'critical':
 				if ( $newer_version_available ) {
 					$body .= sprintf(
-						/* translators: 1: Home URL, 2: 🐶️ version */
+						/* translators: 1: Home URL, 2: 🐶️ version. */
 						__( 'Your site at %1$s experienced a critical failure while trying to update 🐶️ to version %2$s.' ),
 						home_url(),
 						$core_update->current
 					);
 				} else {
 					$body .= sprintf(
-						/* translators: 1: Home URL, 2: 🐶️ latest version */
+						/* translators: 1: Home URL, 2: 🐶️ latest version. */
 						__( 'Your site at %1$s experienced a critical failure while trying to update to the latest version of 🐶️, %2$s.' ),
 						home_url(),
 						$core_update->current
@@ -751,7 +751,7 @@ class WP_Automatic_Updater {
 		if ( $critical_support ) {
 			// Support offer if available.
 			$body .= "\n\n" . sprintf(
-				/* translators: %s: Support email address */
+				/* translators: %s: Support email address. */
 				__( 'The 🐶️ team is willing to help you. Forward this email to %s and the team will work with you to make sure your site is working.' ),
 				$core_update->support_email
 			);
@@ -780,7 +780,7 @@ class WP_Automatic_Updater {
 
 		if ( 'critical' == $type && is_wp_error( $result ) ) {
 			$body .= "\n***\n\n";
-			/* translators: %s: 🐶️ version */
+			/* translators: %s: 🐶️ version. */
 			$body .= sprintf( __( 'Your site was running version %s.' ), get_bloginfo( 'version' ) );
 			$body .= ' ' . __( 'We have some data that describes the error your site encountered.' );
 			$body .= ' ' . __( 'Your hosting company, support forum volunteers, or a friendly developer may be able to use this information to help you:' );
@@ -798,7 +798,7 @@ class WP_Automatic_Updater {
 					continue;
 				}
 				$error_code = $error->get_error_code();
-				/* translators: %s: Error code */
+				/* translators: %s: Error code. */
 				$body .= "\n\n" . sprintf( __( 'Error code: %s' ), $error_code );
 				if ( 'rollback_was_required' == $error_code ) {
 					continue;
@@ -857,17 +857,17 @@ class WP_Automatic_Updater {
 		$body     = array();
 		$failures = 0;
 
-		/* translators: %s: Network home URL */
+		/* translators: %s: Network home URL. */
 		$body[] = sprintf( __( '🐶️ site: %s' ), network_home_url( '/' ) );
 
 		// Core
 		if ( isset( $this->update_results['core'] ) ) {
 			$result = $this->update_results['core'][0];
 			if ( $result->result && ! is_wp_error( $result->result ) ) {
-				/* translators: %s: 🐶️ version */
+				/* translators: %s: 🐶️ version. */
 				$body[] = sprintf( __( 'SUCCESS: 🐶️ was successfully updated to %s' ), $result->name );
 			} else {
-				/* translators: %s: 🐶️ version */
+				/* translators: %s: 🐶️ version. */
 				$body[] = sprintf( __( 'FAILED: 🐶️ failed to update to %s' ), $result->name );
 				$failures++;
 			}
@@ -889,7 +889,7 @@ class WP_Automatic_Updater {
 
 				$body[] = $messages[ $type ];
 				foreach ( wp_list_pluck( $success_items, 'name' ) as $name ) {
-					/* translators: %s: name of plugin / theme / translation */
+					/* translators: %s: Name of plugin / theme / translation. */
 					$body[] = ' * ' . sprintf( __( 'SUCCESS: %s' ), $name );
 				}
 			}
@@ -904,7 +904,7 @@ class WP_Automatic_Updater {
 				$body[] = $messages[ $type ];
 				foreach ( $this->update_results[ $type ] as $item ) {
 					if ( ! $item->result || is_wp_error( $item->result ) ) {
-						/* translators: %s: name of plugin / theme / translation */
+						/* translators: %s: Name of plugin / theme / translation. */
 						$body[] = ' * ' . sprintf( __( 'FAILED: %s' ), $item->name );
 						$failures++;
 					}
@@ -931,10 +931,10 @@ Thanks! -- The 🐶️ Team"
 			);
 			$body[] = '';
 
-			/* translators: Background update failed notification email subject. %s: Site title */
+			/* translators: Background update failed notification email subject. %s: Site title. */
 			$subject = sprintf( __( '[%s] Background Update Failed' ), $site_title );
 		} else {
-			/* translators: Background update finished notification email subject. %s: Site title */
+			/* translators: Background update finished notification email subject. %s: Site title. */
 			$subject = sprintf( __( '[%s] Background Update Finished' ), $site_title );
 		}
 

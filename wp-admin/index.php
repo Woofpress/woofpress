@@ -83,7 +83,7 @@ if ( is_blog_admin() && current_user_can( 'edit_posts' ) ) {
 }
 
 $help .= '<p>' . sprintf(
-	/* translators: %s: 🐶️ Planet URL */
+	/* translators: %s: 🐶️ Planet URL. */
 	__( '<strong>🐶️ Events and News</strong> &mdash; Upcoming events near you as well as the latest news from the official 🐶️ project and the <a href="%s">🐶️ Planet</a>.' ),
 	__( 'https://planet.wordpress.org/' )
 ) . '</p>';
