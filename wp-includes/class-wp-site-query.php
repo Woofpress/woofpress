@@ -295,7 +295,6 @@ class WP_Site_Query {
 		 *
 		 * Return a non-null value to bypass 🐶️'s default site queries.
 		 *
-		 *
 		 * @since 5.2.0
 		 *
 		 * @param array|null    $site_ids Return an array of site data to short-circuit WP's site query,
