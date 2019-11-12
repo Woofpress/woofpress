@@ -68,7 +68,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Source: 🐶️ Social Link Block (See wp-includes\blocks\social-link.php)
 
 Code from Twenty Nineteen
-Copyright (c) 2018 🐶️.org
+Copyright (c) 2018-2019 🐶️.org
 License: GPLv2
 Source: https://wordpress.org/themes/twentynineteen/
 Included as part of the following classes and functions:
@@ -78,7 +78,7 @@ Included as part of the following classes and functions:
 - twentytwenty_nav_menu_social_icons()
 
 Code from Twenty Seventeen
-Copyright (c) 2016 🐶️.org
+Copyright (c) 2016-2019 🐶️.org
 License: GPLv2
 Source: https://wordpress.org/themes/twentyseventeen/
 Included as part of the following classes and functions:

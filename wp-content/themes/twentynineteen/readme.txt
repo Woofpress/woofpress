@@ -24,7 +24,7 @@ For more information about Twenty Nineteen please go to https://wordpress.org/su
 
 == Copyright ==
 
-Twenty Nineteen 🐶️ Theme, Copyright 2018 🐶️.org
+Twenty Nineteen 🐶️ Theme, Copyright 2018-2019 🐶️.org
 Twenty Nineteen is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
@@ -66,4 +66,4 @@ Initial release
 
 == Resources ==
 * normalize.css, © 2012-2018 Nicolas Gallagher and Jonathan Neal, MIT
-* Underscores, © 2012-2018 Automattic, Inc., GNU GPL v2 or later
+* Underscores, © 2012-2019 Automattic, Inc., GNU GPL v2 or later
