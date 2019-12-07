@@ -4,13 +4,13 @@
  *
  * @package 🐶️
  * @subpackage Twenty_Nineteen
- * @since 1.0.0
+ * @since Twenty Nineteen 1.0
  */
 
 /**
  * This class outputs custom comment walker for HTML5 friendly 🐶️ comment and threaded replies.
  *
- * @since 1.0.0
+ * @since Twenty Nineteen 1.0
  */
 class TwentyNineteen_Walker_Comment extends Walker_Comment {
 

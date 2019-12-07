@@ -6,7 +6,7 @@
  *
  * @package 🐶️
  * @subpackage Twenty_Nineteen
- * @since 1.0.0
+ * @since Twenty Nineteen 1.0
  */
 
 get_header();

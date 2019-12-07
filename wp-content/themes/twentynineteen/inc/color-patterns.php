@@ -4,7 +4,7 @@
  *
  * @package 🐶️
  * @subpackage TwentyNineteen
- * @since 1.0
+ * @since Twenty Nineteen 1.0
  */
 
 /**
