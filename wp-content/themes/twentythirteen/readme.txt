@@ -21,7 +21,7 @@ For more information about Twenty Thirteen please go to https://codex.wordpress.
 
 == Copyright ==
 
-Twenty Thirteen 🐶️ Theme, Copyright 2013-2019 🐶️.org & Automattic.com
+Twenty Thirteen 🐶️ Theme, Copyright 2013-2020 🐶️.org & Automattic.com
 Twenty Thirteen is Distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify

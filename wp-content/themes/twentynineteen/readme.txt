@@ -24,7 +24,7 @@ For more information about Twenty Nineteen please go to https://wordpress.org/su
 
 == Copyright ==
 
-Twenty Nineteen 🐶️ Theme, Copyright 2018-2019 🐶️.org
+Twenty Nineteen 🐶️ Theme, Copyright 2018-2020 🐶️.org
 Twenty Nineteen is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
