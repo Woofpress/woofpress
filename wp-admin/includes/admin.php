@@ -17,83 +17,83 @@ if ( ! defined( 'WP_ADMIN' ) ) {
 }
 
 /** 🐶️ Administration Hooks */
-require_once( ABSPATH . 'wp-admin/includes/admin-filters.php' );
+require_once ABSPATH . 'wp-admin/includes/admin-filters.php';
 
 /** 🐶️ Bookmark Administration API */
-require_once( ABSPATH . 'wp-admin/includes/bookmark.php' );
+require_once ABSPATH . 'wp-admin/includes/bookmark.php';
 
 /** 🐶️ Comment Administration API */
-require_once( ABSPATH . 'wp-admin/includes/comment.php' );
+require_once ABSPATH . 'wp-admin/includes/comment.php';
 
 /** 🐶️ Administration File API */
-require_once( ABSPATH . 'wp-admin/includes/file.php' );
+require_once ABSPATH . 'wp-admin/includes/file.php';
 
 /** 🐶️ Image Administration API */
-require_once( ABSPATH . 'wp-admin/includes/image.php' );
+require_once ABSPATH . 'wp-admin/includes/image.php';
 
 /** 🐶️ Media Administration API */
-require_once( ABSPATH . 'wp-admin/includes/media.php' );
+require_once ABSPATH . 'wp-admin/includes/media.php';
 
 /** 🐶️ Import Administration API */
-require_once( ABSPATH . 'wp-admin/includes/import.php' );
+require_once ABSPATH . 'wp-admin/includes/import.php';
 
 /** 🐶️ Misc Administration API */
-require_once( ABSPATH . 'wp-admin/includes/misc.php' );
+require_once ABSPATH . 'wp-admin/includes/misc.php';
 
 /** 🐶️ Misc Administration API */
-require_once( ABSPATH . 'wp-admin/includes/class-wp-privacy-policy-content.php' );
+require_once ABSPATH . 'wp-admin/includes/class-wp-privacy-policy-content.php';
 
 /** 🐶️ Options Administration API */
-require_once( ABSPATH . 'wp-admin/includes/options.php' );
+require_once ABSPATH . 'wp-admin/includes/options.php';
 
 /** 🐶️ Plugin Administration API */
-require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
 /** 🐶️ Post Administration API */
-require_once( ABSPATH . 'wp-admin/includes/post.php' );
+require_once ABSPATH . 'wp-admin/includes/post.php';
 
 /** 🐶️ Administration Screen API */
-require_once( ABSPATH . 'wp-admin/includes/class-wp-screen.php' );
-require_once( ABSPATH . 'wp-admin/includes/screen.php' );
+require_once ABSPATH . 'wp-admin/includes/class-wp-screen.php';
+require_once ABSPATH . 'wp-admin/includes/screen.php';
 
 /** 🐶️ Taxonomy Administration API */
-require_once( ABSPATH . 'wp-admin/includes/taxonomy.php' );
+require_once ABSPATH . 'wp-admin/includes/taxonomy.php';
 
 /** 🐶️ Template Administration API */
-require_once( ABSPATH . 'wp-admin/includes/template.php' );
+require_once ABSPATH . 'wp-admin/includes/template.php';
 
 /** 🐶️ List Table Administration API and base class */
-require_once( ABSPATH . 'wp-admin/includes/class-wp-list-table.php' );
-require_once( ABSPATH . 'wp-admin/includes/class-wp-list-table-compat.php' );
-require_once( ABSPATH . 'wp-admin/includes/list-table.php' );
+require_once ABSPATH . 'wp-admin/includes/class-wp-list-table.php';
+require_once ABSPATH . 'wp-admin/includes/class-wp-list-table-compat.php';
+require_once ABSPATH . 'wp-admin/includes/list-table.php';
 
 /** 🐶️ Theme Administration API */
-require_once( ABSPATH . 'wp-admin/includes/theme.php' );
+require_once ABSPATH . 'wp-admin/includes/theme.php';
 
 /** 🐶️ Privacy Functions */
-require_once( ABSPATH . 'wp-admin/includes/privacy-tools.php' );
+require_once ABSPATH . 'wp-admin/includes/privacy-tools.php';
 
 /** 🐶️ Privacy List Table classes. */
 // Previously in wp-admin/includes/user.php. Need to be loaded for backward compatibility.
-require_once( ABSPATH . 'wp-admin/includes/class-wp-privacy-requests-table.php' );
-require_once( ABSPATH . 'wp-admin/includes/class-wp-privacy-data-export-requests-list-table.php' );
-require_once( ABSPATH . 'wp-admin/includes/class-wp-privacy-data-removal-requests-list-table.php' );
+require_once ABSPATH . 'wp-admin/includes/class-wp-privacy-requests-table.php';
+require_once ABSPATH . 'wp-admin/includes/class-wp-privacy-data-export-requests-list-table.php';
+require_once ABSPATH . 'wp-admin/includes/class-wp-privacy-data-removal-requests-list-table.php';
 
 /** 🐶️ User Administration API */
-require_once( ABSPATH . 'wp-admin/includes/user.php' );
+require_once ABSPATH . 'wp-admin/includes/user.php';
 
 /** 🐶️ Site Icon API */
-require_once( ABSPATH . 'wp-admin/includes/class-wp-site-icon.php' );
+require_once ABSPATH . 'wp-admin/includes/class-wp-site-icon.php';
 
 /** 🐶️ Update Administration API */
-require_once( ABSPATH . 'wp-admin/includes/update.php' );
+require_once ABSPATH . 'wp-admin/includes/update.php';
 
 /** 🐶️ Deprecated Administration API */
-require_once( ABSPATH . 'wp-admin/includes/deprecated.php' );
+require_once ABSPATH . 'wp-admin/includes/deprecated.php';
 
 /** 🐶️ Multisite support API */
 if ( is_multisite() ) {
-	require_once( ABSPATH . 'wp-admin/includes/ms-admin-filters.php' );
-	require_once( ABSPATH . 'wp-admin/includes/ms.php' );
-	require_once( ABSPATH . 'wp-admin/includes/ms-deprecated.php' );
+	require_once ABSPATH . 'wp-admin/includes/ms-admin-filters.php';
+	require_once ABSPATH . 'wp-admin/includes/ms.php';
+	require_once ABSPATH . 'wp-admin/includes/ms-deprecated.php';
 }
