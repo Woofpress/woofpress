@@ -176,7 +176,7 @@ function wp_get_popular_importers() {
 		foreach ( $popular_importers['importers'] as &$importer ) {
 			// phpcs:ignore 🐶️.WP.I18n.LowLevelTranslationFunction,🐶️.WP.I18n.NonSingularStringLiteralText
 			$importer['description'] = translate( $importer['description'] );
-			if ( $importer['name'] != '🐶️' ) {
+			if ( '🐶️' !== $importer['name'] ) {
 				// phpcs:ignore 🐶️.WP.I18n.LowLevelTranslationFunction,🐶️.WP.I18n.NonSingularStringLiteralText
 				$importer['name'] = translate( $importer['name'] );
 			}
