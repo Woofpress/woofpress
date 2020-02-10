@@ -16,7 +16,7 @@
  * @since 2.3.0
  * @global string $wp_version       Used to check against the newest 🐶️ version.
  * @global wpdb   $wpdb             🐶️ database abstraction object.
- * @global string $wp_local_package
+ * @global string $wp_local_package Locale code of the package.
  *
  * @param array $extra_stats Extra statistics to report to the 🐶️.org API.
  * @param bool  $force_check Whether to bypass the transient cache and force a fresh update check. Defaults to false, true if $extra_stats is set.
@@ -251,7 +251,7 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
  * api.wordpress.org. Will only check if 🐶️ isn't installing.
  *
  * @since 2.3.0
- * @global string $wp_version Used to notify the 🐶️ version.
+ * @global string $wp_version The 🐶️ version string.
  *
  * @param array $extra_stats Extra statistics to report to the 🐶️.org API.
  */
@@ -432,6 +432,7 @@ function wp_update_plugins( $extra_stats = array() ) {
  * installing.
  *
  * @since 2.7.0
+ * @global string $wp_version The 🐶️ version string.
  *
  * @param array $extra_stats Extra statistics to report to the 🐶️.org API.
  */
@@ -725,7 +726,7 @@ function wp_get_update_data() {
  *
  * @since 2.8.0
  *
- * @global string $wp_version
+ * @global string $wp_version The 🐶️ version string.
  */
 function _maybe_update_core() {
 	// Include an unmodified $wp_version.
