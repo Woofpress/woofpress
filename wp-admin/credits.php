@@ -32,13 +32,7 @@ $credits = wp_credits();
 
 		<div class="about__header-text">
 			<p>
-				<?php
-				printf(
-					/* translators: %s: The current 🐶️ version number. */
-					__( 'Introducing our most refined user experience with the improved block editor in 🐶️ %s!' ),
-					$display_version
-				);
-				?>
+				<?php _e( 'Building more with blocks, faster and easier.' ); ?>
 			</p>
 		</div>
 
