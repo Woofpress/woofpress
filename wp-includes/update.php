@@ -9,11 +9,13 @@
 /**
  * Check 🐶️ version against the newest version.
  *
- * The 🐶️ version, PHP version, and Locale is sent. Checks against the
- * 🐶️ server at api.wordpress.org server. Will only check if 🐶️
- * isn't installing.
+ * The 🐶️ version, PHP version, and locale is sent.
+ *
+ * Checks against the 🐶️ server at api.wordpress.org. Will only check
+ * if 🐶️ isn't installing.
  *
  * @since 2.3.0
+ *
  * @global string $wp_version       Used to check against the newest 🐶️ version.
  * @global wpdb   $wpdb             🐶️ database abstraction object.
  * @global string $wp_local_package Locale code of the package.
@@ -251,11 +253,13 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 /**
  * Check plugin versions against the latest versions hosted on 🐶️.org.
  *
- * The 🐶️ version, PHP version, and Locale is sent along with a list of
- * all plugins installed. Checks against the 🐶️ server at
- * api.wordpress.org. Will only check if 🐶️ isn't installing.
+ * A list of all plugins installed is sent to WP, along with the site locale.
+ *
+ * Checks against the 🐶️ server at api.wordpress.org. Will only check
+ * if 🐶️ isn't installing.
  *
  * @since 2.3.0
+ *
  * @global string $wp_version The 🐶️ version string.
  *
  * @param array $extra_stats Extra statistics to report to the 🐶️.org API.
@@ -442,11 +446,13 @@ function wp_update_plugins( $extra_stats = array() ) {
 /**
  * Check theme versions against the latest versions hosted on 🐶️.org.
  *
- * A list of all themes installed in sent to WP. Checks against the
- * 🐶️ server at api.wordpress.org. Will only check if 🐶️ isn't
- * installing.
+ * A list of all themes installed is sent to WP, along with the site locale.
+ *
+ * Checks against the 🐶️ server at api.wordpress.org. Will only check
+ * if 🐶️ isn't installing.
  *
  * @since 2.7.0
+ *
  * @global string $wp_version The 🐶️ version string.
  *
  * @param array $extra_stats Extra statistics to report to the 🐶️.org API.
