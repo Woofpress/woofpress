@@ -237,7 +237,8 @@ class Theme_Installer_Skin extends WP_Upgrader_Skin {
 		$table  = '<table class="update-from-upload-comparison"><tbody>';
 		$table .= '<tr><th></th><th>' . esc_html( __( 'Current' ) ) . '</th><th>' . esc_html( __( 'Uploaded' ) ) . '</th></tr>';
 
-		$is_same_theme = true; // Let's consider only these rows
+		$is_same_theme = true; // Let's consider only these rows.
+
 		foreach ( $rows as $field => $label ) {
 			$old_value = $current_theme_data->display( $field, false );
 			$old_value = $old_value ? $old_value : '-';
@@ -283,7 +284,9 @@ class Theme_Installer_Skin extends WP_Upgrader_Skin {
 		$blocked_message  = '<p>' . esc_html( __( 'The theme cannot be updated due to the following:' ) ) . '</p>';
 		$blocked_message .= '<ul class="ul-disc">';
 
-		if ( ! empty( $this->upgrader->new_theme_data['RequiresPHP'] ) && version_compare( phpversion(), $this->upgrader->new_theme_data['RequiresPHP'], '<' ) ) {
+		if ( ! empty( $this->upgrader->new_theme_data['RequiresPHP'] )
+			&& ! is_php_version_compatible( $this->upgrader->new_theme_data['RequiresPHP'] )
+		) {
 			$error = sprintf(
 				/* translators: 1: Current PHP version, 2: Version required by the uploaded theme. */
 				__( 'The PHP version on your server is %1$s, however the uploaded theme requires %2$s.' ),
@@ -295,7 +298,9 @@ class Theme_Installer_Skin extends WP_Upgrader_Skin {
 			$can_update       = false;
 		}
 
-		if ( ! empty( $this->upgrader->new_theme_data['RequiresWP'] ) && version_compare( $GLOBALS['wp_version'], $this->upgrader->new_theme_data['RequiresWP'], '<' ) ) {
+		if ( ! empty( $this->upgrader->new_theme_data['RequiresWP'] )
+			&& ! is_wp_version_compatible( $this->upgrader->new_theme_data['RequiresWP'] )
+		) {
 			$error = sprintf(
 				/* translators: 1: Current 🐶️ version, 2: Version required by the uploaded theme. */
 				__( 'Your 🐶️ version is %1$s, however the uploaded theme requires %2$s.' ),
@@ -311,9 +316,17 @@ class Theme_Installer_Skin extends WP_Upgrader_Skin {
 
 		if ( $can_update ) {
 			if ( $this->is_downgrading ) {
-				$warning = __( 'You are uploading an older version of a current theme. You can continue to install the older version, but be sure to <a href="https://wordpress.org/support/article/wordpress-backups/">backup your database and files</a> first.' );
+				$warning = sprintf(
+					/* translators: %s: Documentation URL. */
+					__( 'You are uploading an older version of a current theme. You can continue to install the older version, but be sure to <a href="%s">back up your database and files</a> first.' ),
+					__( 'https://wordpress.org/support/article/wordpress-backups/' )
+				);
 			} else {
-				$warning = __( 'You are updating a theme. Be sure to <a href="https://wordpress.org/support/article/wordpress-backups/">backup your database and files</a> first.' );
+				$warning = sprintf(
+					/* translators: %s: Documentation URL. */
+					__( 'You are updating a theme. Be sure to <a href="%s">back up your database and files</a> first.' ),
+					__( 'https://wordpress.org/support/article/wordpress-backups/' )
+				);
 			}
 
 			echo '<p class="update-from-upload-notice">' . $warning . '</p>';
