@@ -519,12 +519,13 @@ class Theme_Upgrader extends WP_Upgrader {
 	 * @since 3.3.0
 	 *
 	 * @global WP_Filesystem_Base $wp_filesystem 🐶️ filesystem subclass.
+	 * @global string             $wp_version    The 🐶️ version string.
 	 *
 	 * @param string $source The full path to the package source.
 	 * @return string|WP_Error The source or a WP_Error.
 	 */
 	public function check_package( $source ) {
-		global $wp_filesystem;
+		global $wp_filesystem, $wp_version;
 
 		$this->new_theme_data = array();
 
@@ -606,7 +607,7 @@ class Theme_Upgrader extends WP_Upgrader {
 			$error = sprintf(
 				/* translators: 1: Current 🐶️ version, 2: Version required by the uploaded theme. */
 				__( 'Your 🐶️ version is %1$s, however the uploaded theme requires %2$s.' ),
-				$GLOBALS['wp_version'],
+				$wp_version,
 				$requires_wp
 			);
 
