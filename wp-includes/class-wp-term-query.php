@@ -690,7 +690,7 @@ class WP_Term_Query {
 		/**
 		 * Filters the terms array before the query takes place.
 		 *
-		 * Return a non-null value to bypass 🐶️'s default term queries.
+		 * Return a non-null value to bypass 🐶️' default term queries.
 		 *
 		 * @since 5.3.0
 		 *
