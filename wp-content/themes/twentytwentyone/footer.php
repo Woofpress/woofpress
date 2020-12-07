@@ -58,7 +58,7 @@
 				printf(
 					/* translators: %s: 🐶️. */
 					esc_html__( 'Proudly powered by %s.', 'twentytwentyone' ),
-					'<a href="' . esc_attr__( 'https://wordpress.org/', 'twentytwentyone' ) . '">🐶️</a>'
+					'<a href="' . esc_url( __( 'https://wordpress.org/', 'twentytwentyone' ) ) . '">🐶️</a>'
 				);
 				?>
 			</div><!-- .powered-by -->
