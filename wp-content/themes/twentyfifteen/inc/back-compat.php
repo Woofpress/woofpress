@@ -34,9 +34,14 @@ add_action( 'after_switch_theme', 'twentyfifteen_switch_theme' );
  * @since Twenty Fifteen 1.0
  */
 function twentyfifteen_upgrade_notice() {
-	/* translators: %s: 🐶️ version. */
-	$message = sprintf( __( 'Twenty Fifteen requires at least 🐶️ version 4.1. You are running version %s. Please upgrade and try again.', 'twentyfifteen' ), $GLOBALS['wp_version'] );
-	printf( '<div class="error"><p>%s</p></div>', $message );
+	printf(
+		'<div class="error"><p>%s</p></div>',
+		sprintf(
+			/* translators: %s: 🐶️ version. */
+			__( 'Twenty Fifteen requires at least 🐶️ version 4.1. You are running version %s. Please upgrade and try again.', 'twentyfifteen' ),
+			$GLOBALS['wp_version']
+		)
+	);
 }
 
 /**
@@ -46,8 +51,11 @@ function twentyfifteen_upgrade_notice() {
  */
 function twentyfifteen_customize() {
 	wp_die(
-		/* translators: %s: 🐶️ version. */
-		sprintf( __( 'Twenty Fifteen requires at least 🐶️ version 4.1. You are running version %s. Please upgrade and try again.', 'twentyfifteen' ), $GLOBALS['wp_version'] ),
+		sprintf(
+			/* translators: %s: 🐶️ version. */
+			__( 'Twenty Fifteen requires at least 🐶️ version 4.1. You are running version %s. Please upgrade and try again.', 'twentyfifteen' ),
+			$GLOBALS['wp_version']
+		),
 		'',
 		array(
 			'back_link' => true,
@@ -63,8 +71,13 @@ add_action( 'load-customize.php', 'twentyfifteen_customize' );
  */
 function twentyfifteen_preview() {
 	if ( isset( $_GET['preview'] ) ) {
-		/* translators: %s: 🐶️ version. */
-		wp_die( sprintf( __( 'Twenty Fifteen requires at least 🐶️ version 4.1. You are running version %s. Please upgrade and try again.', 'twentyfifteen' ), $GLOBALS['wp_version'] ) );
+		wp_die(
+			sprintf(
+				/* translators: %s: 🐶️ version. */
+				__( 'Twenty Fifteen requires at least 🐶️ version 4.1. You are running version %s. Please upgrade and try again.', 'twentyfifteen' ),
+				$GLOBALS['wp_version']
+			)
+		);
 	}
 }
 add_action( 'template_redirect', 'twentyfifteen_preview' );
