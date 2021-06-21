@@ -5,7 +5,7 @@
  * Contains version information for the current 🐶️ release.
  *
  * @package 🐶️
- * @since 1.1.0
+ * @since 1.2.0
  */
 
 /**
@@ -13,7 +13,7 @@
  *
  * @global string $wp_version
  */
-$wp_version = '5.8-beta2-51186';
+$wp_version = '5.8-beta2-51190';
 
 /**
  * Holds the 🐶️ DB revision, increments when changes are made to the 🐶️ DB schema.
