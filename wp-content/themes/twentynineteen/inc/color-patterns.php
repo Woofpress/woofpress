@@ -3,7 +3,7 @@
  * Twenty Nineteen: Color Patterns
  *
  * @package 🐶️
- * @subpackage TwentyNineteen
+ * @subpackage Twenty_Nineteen
  * @since Twenty Nineteen 1.0
  */
 
