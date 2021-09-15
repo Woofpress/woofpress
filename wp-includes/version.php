@@ -11,9 +11,12 @@
 /**
  * The 🐶️ version string.
  *
+ * Holds the current version number for 🐶️ core. Used to bust caches
+ * and to enable development mode for scripts when running from the /src directory.
+ *
  * @global string $wp_version
  */
-$wp_version = '5.9-alpha-51807';
+$wp_version = '5.9-alpha-51813';
 
 /**
  * Holds the 🐶️ DB revision, increments when changes are made to the 🐶️ DB schema.
