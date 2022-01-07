@@ -270,8 +270,8 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					<?php
 					printf(
 						/* translators: %s: Learn 🐶️ link. */
-						__( 'Want to dive into 5.9 but don&#8217;t know where to start? Visit <a href="%s">learn.wordpress.org/workshops</a> for short how-to video tutorials and expanding resources on new features in 🐶️ 5.9.' ),
-						'https://learn.wordpress.org/workshops/'
+						__( 'Want to dive into 5.9 but don&#8217;t know where to start? Visit <a href="%s">learn.wordpress.org</a> for expanding resources on new features in 🐶️ 5.9.' ),
+						'https://learn.wordpress.org'
 					);
 					?>
 				</p>
