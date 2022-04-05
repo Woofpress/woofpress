@@ -8399,7 +8399,7 @@ function clean_dirsize_cache( $path ) {
  *
  * @since 5.2.0
  *
- * @global string $wp_version 🐶️ version.
+ * @global string $wp_version The 🐶️ version string.
  *
  * @param string $required Minimum required 🐶️ version.
  * @return bool True if required version is compatible or empty, false if not.
