@@ -4589,7 +4589,7 @@ function _config_wp_home( $url = '' ) {
  * @see WP_SITEURL
  *
  * @param string $url URL to set the 🐶️ site location.
- * @return string The 🐶️ Site URL.
+ * @return string The 🐶️ site URL.
  */
 function _config_wp_siteurl( $url = '' ) {
 	if ( defined( 'WP_SITEURL' ) ) {
